@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: #08080c;
+}
+
+.navbar-container {
+  margin: 2rem 5rem;
+  display: flex;
+}
+
+.navbar-container a {
+  margin: auto;
+  justify-content: center;
+}
+
+.navbar-link {
+  color: #fefcfb;
+  font-size: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Oxygen", sans-serif;
+}/*# sourceMappingURL=Navbar.css.map */

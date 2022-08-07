@@ -1,0 +1,25 @@
+@import "../Variables/Variables.scss";
+
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: $black;
+}
+
+.navbar-container {
+  margin: 2rem 5rem;
+  display: flex;
+}
+
+.navbar-container a {
+  margin: auto;
+  justify-content: center;
+}
+
+.navbar-link {
+  color: $white;
+  font-size: 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: $homeFont;
+}
