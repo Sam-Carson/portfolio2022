@@ -1,25 +1,112 @@
 @import "../Variables/Variables.scss";
 
-.navbar {
-  height: 10vh;
-  width: 100%;
-  background-color: $black;
-}
-
 .navbar-container {
-  margin: 2rem 5rem;
-  display: flex;
+  height: 8vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  background-color: $white;
 }
 
-.navbar-container a {
-  margin: auto;
-  justify-content: center;
+.navbar-container .navbar-link {
+  margin: 0rem 2rem;
 }
 
 .navbar-link {
-  color: $white;
-  font-size: 2rem;
+  color: $black;
+  font-size: 0.9rem;
   text-decoration: none;
-  font-size: 1rem;
   font-family: $homeFont;
+}
+
+.navbar-link:hover {
+  color: $orange;
+  transition: 200ms;
+}
+
+.navbar-link-spacer {
+  color: $orange;
+}
+
+.navbar-links-container,
+.logo-container,
+.resume-container {
+  margin: auto;
+}
+
+.resume-container {
+  margin: auto;
+}
+
+.resume-container:hover {
+  margin: auto;
+}
+
+.resume-btn {
+  margin-right: 2rem;
+}
+
+.resume-btn:hover {
+  background-color: $light-orange;
+  transition: 300ms;
+}
+
+.resume-btn {
+  padding: 0.6rem 0rem;
+  border: 1px solid $black;
+  border-radius: 1px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contact-link,
+.resume-link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.resume-link:hover {
+  color: $black;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#logo-smdc {
+  font-family: $homeFont;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.logo {
+  position: relative;
+  width: 53px;
+  height: 25px;
+  box-sizing: content-box;
+  margin: auto;
+}
+
+.logo:before,
+.logo:after {
+  content: "";
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 5px solid $orange;
+  border-radius: 12.5px 12.5px 0 12.5px;
+  transform: rotate(-45deg);
+}
+
+.logo:after {
+  left: auto;
+  right: 0;
+  border-radius: 12.5px 12.5px 12.5px 0;
+  transform: rotate(45deg);
 }

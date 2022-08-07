@@ -1,24 +1,111 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
-.navbar {
-  height: 10vh;
-  width: 100%;
-  background-color: #08080c;
-}
-
 .navbar-container {
-  margin: 2rem 5rem;
-  display: flex;
+  height: 8vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  background-color: #fefcfb;
 }
 
-.navbar-container a {
-  margin: auto;
-  justify-content: center;
+.navbar-container .navbar-link {
+  margin: 0rem 2rem;
 }
 
 .navbar-link {
-  color: #fefcfb;
-  font-size: 2rem;
+  color: #08080c;
+  font-size: 0.9rem;
   text-decoration: none;
-  font-size: 1rem;
   font-family: "Oxygen", sans-serif;
+}
+
+.navbar-link:hover {
+  color: #f07c42;
+  transition: 200ms;
+}
+
+.navbar-link-spacer {
+  color: #f07c42;
+}
+
+.navbar-links-container,
+.logo-container,
+.resume-container {
+  margin: auto;
+}
+
+.resume-container {
+  margin: auto;
+}
+
+.resume-container:hover {
+  margin: auto;
+}
+
+.resume-btn {
+  margin-right: 2rem;
+}
+
+.resume-btn:hover {
+  background-color: #f18955;
+  transition: 300ms;
+}
+
+.resume-btn {
+  padding: 0.6rem 0rem;
+  border: 1px solid #08080c;
+  border-radius: 1px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contact-link,
+.resume-link {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.resume-link:hover {
+  color: #08080c;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+#logo-smdc {
+  font-family: "Oxygen", sans-serif;
+  margin-left: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.logo {
+  position: relative;
+  width: 53px;
+  height: 25px;
+  box-sizing: content-box;
+  margin: auto;
+}
+
+.logo:before,
+.logo:after {
+  content: "";
+  box-sizing: content-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 5px solid #f07c42;
+  border-radius: 12.5px 12.5px 0 12.5px;
+  transform: rotate(-45deg);
+}
+
+.logo:after {
+  left: auto;
+  right: 0;
+  border-radius: 12.5px 12.5px 12.5px 0;
+  transform: rotate(45deg);
 }/*# sourceMappingURL=Navbar.css.map */

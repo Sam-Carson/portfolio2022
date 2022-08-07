@@ -1,3 +1,8 @@
 body {
-  background-color: #08080c;
+  background-color: #fefcfb;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
