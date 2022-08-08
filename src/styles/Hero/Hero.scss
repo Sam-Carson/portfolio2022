@@ -50,38 +50,51 @@ img {
   height: auto;
   border-radius: 50%;
   position: absolute;
-  top: 0;
-  left: 0;
   z-index: 4;
 }
 
-.headshot-img {
-  height: 500px;
-  width: 500px;
-}
-
 .img-background-layer-1 {
-  height: 425px;
-  width: 425px;
-  background-color: $orange;
+  height: 400px;
+  width: 400px;
+  background-color: $light-orange;
   position: absolute;
   z-index: 1;
+  border-radius: 50% 50% 50% 0%;
 }
 
 .img-background-layer-2 {
-  height: 425px;
-  width: 425px;
-  background-color: $white;
+  height: 400px;
+  width: 400px;
+  background-color: $orange;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
+  border-radius: 50% 0% 50% 50%;
 }
 
 .img-background-layer-3 {
-  height: 425px;
-  width: 425px;
-  background-color: $light-orange;
+  width: 3px;
+  height: 600px;
+  background-color: $orange;
+  z-index: 0;
   position: absolute;
-  z-index: 3;
+}
+
+.img-background-layer-4 {
+  width: 3px;
+  height: 600px;
+  background-color: $light-orange;
+  z-index: 0;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.img-background-layer-5 {
+  width: 3px;
+  height: 600px;
+  background-color: $light-orange;
+  z-index: 0;
+  position: absolute;
+  transform: rotate(-90deg) translateX(-45px);
 }
 
 .hero-staples {

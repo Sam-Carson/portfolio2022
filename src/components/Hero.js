@@ -38,6 +38,9 @@ export default function Hero() {
           <div className="img-background-layer-1"></div>
           <div className="img-background-layer-2"></div>
           <div className="img-background-layer-3"></div>
+          <div className="img-background-layer-4"></div>
+          <div className="img-background-layer-5"></div>
+
           <div className="headshot-img">
             <img src={image} className="img" alt="headshot"></img>
           </div>
