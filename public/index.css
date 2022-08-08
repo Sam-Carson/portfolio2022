@@ -1,8 +1,5 @@
 body {
-  background-color: #fefcfb;
-}
-
-#root {
-  height: 100%;
-  width: 100%;
+  background-color: #f2f1ef;
+  margin: 0; /*IMPORTANT: prevents margin around entire root*/
+  overflow: hidden;
 }

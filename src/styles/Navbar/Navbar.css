@@ -1,11 +1,11 @@
-@import "../Variables/Variables.scss";
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
 .navbar-container {
   height: 8vh;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  background-color: $white;
+  background-color: #f2f1ef;
 }
 
 .navbar-container .navbar-link {
@@ -13,19 +13,19 @@
 }
 
 .navbar-link {
-  color: $black;
+  color: #08080c;
   font-size: 0.9rem;
   text-decoration: none;
-  font-family: $homeFont;
+  font-family: "Oxygen", sans-serif;
 }
 
 .navbar-link:hover {
-  color: $orange;
+  color: #f07c42;
   transition: 200ms;
 }
 
 .navbar-link-spacer {
-  color: $orange;
+  color: #f07c42;
 }
 
 .navbar-links-container,
@@ -47,13 +47,13 @@
 }
 
 .resume-btn:hover {
-  background-color: $light-orange;
+  background-color: #f18955;
   transition: 300ms;
 }
 
 .resume-btn {
   padding: 0.6rem 0rem;
-  border: 1px solid $black;
+  border: 1px solid #08080c;
   border-radius: 1px;
   cursor: pointer;
   display: inline-block;
@@ -67,7 +67,7 @@
 }
 
 .resume-link:hover {
-  color: $black;
+  color: #08080c;
 }
 
 .logo-container {
@@ -77,7 +77,7 @@
 }
 
 #logo-smdc {
-  font-family: $homeFont;
+  font-family: "Bai Jamjuree", sans-serif;
   margin-left: 0.5rem;
   font-size: 1.3rem;
 }
@@ -99,7 +99,7 @@
   left: 0;
   width: 15px;
   height: 15px;
-  border: 5px solid $orange;
+  border: 5px solid #f07c42;
   border-radius: 12.5px 12.5px 0 12.5px;
   transform: rotate(-45deg);
 }
@@ -109,4 +109,4 @@
   right: 0;
   border-radius: 12.5px 12.5px 12.5px 0;
   transform: rotate(45deg);
-}
+}/*# sourceMappingURL=Navbar.css.map */
