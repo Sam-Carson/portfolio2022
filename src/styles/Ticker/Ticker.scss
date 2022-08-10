@@ -1,0 +1,53 @@
+@import "../../Variables/Variables.scss";
+
+section {
+  height: 30vh;
+  width: 100%;
+}
+
+.ticker-banner {
+  height: 10vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: $black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 30%;
+  animation: marquee 15s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+.ticker-text {
+  color: $white;
+  height: fit-content;
+  font-size: 2rem;
+  position: relative;
+  top: 25%;
+}
+
+.ticker-spacer {
+  @include list-spacer;
+  position: relative;
+  top: 40%;
+}
+
+.marquee {
+  display: -webkit-inline-box;
+  justify-content: space-between;
+  transform: rotate(-1deg) translateX(-1rem);
+}
+
+.ticker-express {
+  padding-right: 5rem;
+}
