@@ -16,6 +16,83 @@ $homeFont: "Oxygen", sans-serif;
 $textFont: "Roboto", sans-serif;
 $headerFont: "Bai Jamjuree", sans-serif;
 
+//@media breakpoint definitions
+$breakpoints: (
+  "phoneSmall": 360px,
+  "phoneMed": 375px,
+  "phoneLarge": 425px,
+  "tablet": 768px,
+  "laptop": 1024px,
+  "laptopLarge": 1440px,
+  "desktop": 2560px,
+) !default;
+
+@mixin responsive-test {
+  @include phoneSmall() {
+    background-color: $white;
+  }
+  @include phoneMed() {
+    background-color: $black;
+  }
+  @include phoneLarge() {
+    background-color: $orange;
+  }
+  @include tablet() {
+    background-color: $yellow;
+  }
+  @include laptop() {
+    background-color: $light-yellow;
+  }
+  @include laptopLarge() {
+    background-color: purple;
+  }
+  @include desktop() {
+    background-color: $light-orange;
+  }
+}
+
+@mixin phoneSmall {
+  @media (min-width: map-get($breakpoints, "phoneSmall")) {
+    @content;
+  }
+}
+
+@mixin phoneMed {
+  @media (min-width: map-get($breakpoints, "phoneMed")) {
+    @content;
+  }
+}
+
+@mixin phoneLarge {
+  @media (min-width: map-get($breakpoints, "phoneLarge")) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: map-get($breakpoints, "tablet")) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: map-get($breakpoints, "laptop")) {
+    @content;
+  }
+}
+
+@mixin laptopLarge {
+  @media (min-width: map-get($breakpoints, "laptopLarge")) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: map-get($breakpoints, "desktop")) {
+    @content;
+  }
+}
+
 @mixin list-spacer {
   height: 1rem;
   width: 1rem;

@@ -1,18 +1,6 @@
 import React from "react";
 import "../styles/Ticker/Ticker.css";
 export default function Ticker() {
-  const skills = [];
-  skills.push(
-    "REACT",
-    "HTML5",
-    "CSS3",
-    "JAVASCRIPT",
-    "C#",
-    "SQL",
-    "NODE.JS",
-    "SASS",
-    "EXPRESS"
-  );
   return (
     <section className="ticker-container">
       <div className="marquee">

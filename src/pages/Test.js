@@ -1,10 +1,10 @@
 import React from "react";
-import Ticker from "../components/Ticker";
+import Works from "../components/Works";
 
 export default function Test() {
   return (
     <div>
-      <Ticker />
+      <Works />
     </div>
   );
 }

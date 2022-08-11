@@ -2,6 +2,7 @@
 section {
   height: 30vh;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .ticker-banner {
@@ -14,8 +15,8 @@ section {
   justify-content: space-between;
   position: relative;
   top: 30%;
-  -webkit-animation: marquee 15s linear infinite;
-          animation: marquee 15s linear infinite;
+  -webkit-animation: marquee 30s linear infinite;
+          animation: marquee 30s linear infinite;
   transform-style: preserve-3d;
 }
 
