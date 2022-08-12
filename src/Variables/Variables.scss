@@ -19,7 +19,6 @@ $headerFont: "Bai Jamjuree", sans-serif;
 //@media breakpoint definitions
 $breakpoints: (
   "phoneSmall": 360px,
-  "phoneMed": 375px,
   "phoneLarge": 425px,
   "tablet": 768px,
   "laptop": 1024px,
@@ -29,36 +28,27 @@ $breakpoints: (
 
 @mixin responsive-test {
   @include phoneSmall() {
-    background-color: $white;
-  }
-  @include phoneMed() {
-    background-color: $black;
+    @include mobile-flex;
   }
   @include phoneLarge() {
-    background-color: $orange;
+    @include mobile-flex;
   }
   @include tablet() {
-    background-color: $yellow;
+    @include mobile-flex;
   }
   @include laptop() {
-    background-color: $light-yellow;
+    @include mobile-flex;
   }
   @include laptopLarge() {
-    background-color: purple;
+    @include mobile-flex;
   }
   @include desktop() {
-    background-color: $light-orange;
+    @include mobile-flex;
   }
 }
 
 @mixin phoneSmall {
   @media (min-width: map-get($breakpoints, "phoneSmall")) {
-    @content;
-  }
-}
-
-@mixin phoneMed {
-  @media (min-width: map-get($breakpoints, "phoneMed")) {
     @content;
   }
 }
@@ -99,4 +89,15 @@ $breakpoints: (
   background-color: $orange;
   border-radius: 50%;
   margin: 0;
+}
+
+@mixin mobile-section-headers {
+  h3 {
+    font-size: 4rem;
+  }
+}
+
+@mixin mobile-flex {
+  display: flex;
+  flex-direction: column;
 }

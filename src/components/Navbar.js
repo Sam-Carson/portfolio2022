@@ -13,8 +13,8 @@ export default function navbar() {
           Home
         </a>
         <span className="navbar-link-spacer">|</span>
-        <a href="/projects" className="navbar-link">
-          Works
+        <a href="/portfolio" className="navbar-link">
+          Portfolio
         </a>
         <span className="navbar-link-spacer">|</span>
 
