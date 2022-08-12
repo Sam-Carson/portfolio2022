@@ -64,3 +64,45 @@
   flex-direction: column;
   margin-top: 3rem;
 }
+
+.links-btn-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+}
+
+.links-github-btn,
+.links-visit-btn {
+  padding: 0.8rem 1.5rem;
+  border: 1px solid $black;
+  width: 45%;
+  height: 5rem;
+  text-align: center;
+}
+
+.links-github-btn {
+  background-color: $black;
+  color: $white;
+  width: 45%;
+  height: 5rem;
+}
+
+.links-btn-container .links-visit-btn a,
+.links-btn-container .links-github-btn a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.7rem;
+}
+
+.links-btn-container .links-github-btn a:hover {
+  text-decoration: underline;
+}
+
+.links-btn-container .links-visit-btn a {
+  color: $black;
+  text-decoration: none;
+}
+
+.links-btn-container .links-visit-btn a:hover {
+  text-decoration: underline;
+}

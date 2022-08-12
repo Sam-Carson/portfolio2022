@@ -25,11 +25,11 @@ export default function Works() {
             centuries, but also the leap into electronic typesetting, remaining
             essentially unchanged.
           </p>
-          <div className="hero-btn-container">
-            <div className="hero-resume-btn">
-              <a href="https://github.com/Sam-Carson/spotifyHub">GitHub</a>
+          <div className="links-btn-container">
+            <div className="links-github-btn">
+              <a href="/c">GitHub</a>
             </div>
-            <div className="hero-contact-btn">
+            <div className="links-visit-btn">
               <a href="/contact">Visit</a>
             </div>
           </div>
