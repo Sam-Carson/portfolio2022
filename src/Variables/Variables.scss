@@ -26,7 +26,7 @@ $breakpoints: (
   "desktop": 2560px,
 ) !default;
 
-@mixin responsive-test {
+@mixin responsive {
   @include phoneSmall() {
     @include mobile-flex;
   }
@@ -37,13 +37,10 @@ $breakpoints: (
     @include mobile-flex;
   }
   @include laptop() {
-    @include mobile-flex;
   }
   @include laptopLarge() {
-    @include mobile-flex;
   }
   @include desktop() {
-    @include mobile-flex;
   }
 }
 

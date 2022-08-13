@@ -1,5 +1,4 @@
 body {
   background-color: #f2f1ef;
   margin: 0; /*IMPORTANT: prevents margin around entire root*/
-  /* overflow: hidden; */
 }

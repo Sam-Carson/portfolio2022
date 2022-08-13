@@ -4,6 +4,10 @@ section {
   height: 30vh;
   width: 100%;
   margin-top: 1rem;
+  overflow: hidden;
+  @include laptop {
+    height: 25vh;
+  }
 }
 
 .ticker-banner {
@@ -44,6 +48,7 @@ section {
 }
 
 .marquee {
+  padding-top: 1rem;
   display: -webkit-inline-box;
   justify-content: space-between;
   transform: rotate(-1deg) translateX(-1rem);
