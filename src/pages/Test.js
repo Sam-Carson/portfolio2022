@@ -1,10 +1,10 @@
 import React from "react";
-import Works from "../components/Works";
+import Skills from "../components/Skills";
 
 export default function Test() {
   return (
     <div>
-      <Works />
+      <Skills />
     </div>
   );
 }

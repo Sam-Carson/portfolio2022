@@ -2,7 +2,7 @@
 section {
   height: 30vh;
   width: 100%;
-  margin-top: 1rem;
+  padding-top: 1rem;
   overflow: hidden;
 }
 @media (min-width: 1024px) {
@@ -12,7 +12,7 @@ section {
 }
 
 .ticker-banner {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   overflow: hidden;
   background-color: #08080c;
@@ -67,7 +67,7 @@ section {
   padding-top: 1rem;
   display: -webkit-inline-box;
   justify-content: space-between;
-  transform: rotate(-1deg) translateX(-1rem);
+  transform: rotate(-3deg) translateX(-1rem);
 }
 
 .ticker-express {

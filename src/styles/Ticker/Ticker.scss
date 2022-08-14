@@ -3,7 +3,7 @@
 section {
   height: 30vh;
   width: 100%;
-  margin-top: 1rem;
+  padding-top: 1rem;
   overflow: hidden;
   @include laptop {
     height: 25vh;
@@ -11,7 +11,7 @@ section {
 }
 
 .ticker-banner {
-  height: 10vh;
+  height: 8vh;
   width: 100%;
   overflow: hidden;
   background-color: $black;
@@ -51,7 +51,7 @@ section {
   padding-top: 1rem;
   display: -webkit-inline-box;
   justify-content: space-between;
-  transform: rotate(-1deg) translateX(-1rem);
+  transform: rotate(-3deg) translateX(-1rem);
 }
 
 .ticker-express {

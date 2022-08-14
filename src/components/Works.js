@@ -39,7 +39,7 @@ export default function Works() {
         <div className="project-container">
           <div className="img-tester img-tester-img-right"></div>
           <div className="project-tech-container project-tech-container-img-right">
-            <div className="project-tech first-tech">React</div>
+            <div className="project-tech first-tech-right">React</div>
             <div className="project-tech">Node.js</div>
             <div className="project-tech">SQL</div>
             <div className="project-tech">Express</div>
