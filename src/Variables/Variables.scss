@@ -3,6 +3,7 @@
 $black: #08080c;
 $white: #fefcfb;
 $background: #f2f1ef;
+$background-light: #dddcdaec;
 $yellow: #ffbf47;
 $light-yellow: #ffd485;
 $orange: #f07c42;
@@ -97,4 +98,18 @@ $breakpoints: (
 @mixin mobile-flex {
   display: flex;
   flex-direction: column;
+}
+
+// creates mobile section header
+@mixin section-header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin section-header-h3 {
+  font-size: 7rem;
+  margin: 0;
+  text-align: center;
 }

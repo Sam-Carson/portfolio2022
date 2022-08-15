@@ -4,6 +4,7 @@
   width: 100%;
   height: 70vh;
   padding: 0rem 1rem;
+  background-color: $background;
   @include responsive;
   @include tablet {
     padding: 0 8%;
@@ -43,19 +44,14 @@
 }
 
 .works-header {
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  flex-direction: column;
+  @include section-header;
   @include tablet {
     margin-bottom: 3rem;
   }
 }
 
 .works-header h3 {
-  font-size: 7rem;
-  margin: 0;
-  text-align: center;
+  @include section-header-h3;
   @include laptop {
     font-size: 5rem;
     grid-row-start: 2;

@@ -1,4 +1,41 @@
 @import "../../Variables/Variables.scss";
 
 section {
+  height: fit-content;
+}
+
+.skills-container {
+  height: fit-content;
+  width: 100%;
+}
+
+.skills-header {
+  @include section-header;
+}
+
+.skills-header h3 {
+  @include section-header-h3;
+}
+
+.skills-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-box {
+  width: 90%;
+  border: solid 5px $black;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.skillset-header {
+  font-size: 3rem;
+  margin: 0 0 4rem 0;
+}
+
+.skillset-p {
+  font-size: 1rem;
 }
