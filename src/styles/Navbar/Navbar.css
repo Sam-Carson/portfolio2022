@@ -4,7 +4,18 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  background-color: #f2f1ef;
+  background-color: rgba(242, 241, 239, 0.6);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-clip: padding-box;
+  margin-bottom: 10px;
+  position: fixed;
+  z-index: 10;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .navbar-container {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
 }
 
 .navbar-container .navbar-link {

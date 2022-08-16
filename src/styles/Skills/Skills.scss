@@ -46,6 +46,7 @@ section {
   text-align: center;
   margin: auto;
   margin-top: 3rem;
+  box-shadow: 5px 5px $orange;
   @include laptop {
     padding: 1rem 1rem;
   }

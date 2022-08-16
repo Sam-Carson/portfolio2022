@@ -72,6 +72,7 @@ section {
   text-align: center;
   margin: auto;
   margin-top: 3rem;
+  box-shadow: 5px 5px #f07c42;
 }
 @media (min-width: 1024px) {
   .skill-box {
