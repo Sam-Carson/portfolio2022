@@ -5,11 +5,30 @@ section {
   height: fit-content;
 }
 
-.skills-container {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 100%;
+@media (min-width: 360px) {
+  .skills-container {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .skills-container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .skills-container {
+    width: 75%;
+  }
+}
+@media (min-width: 1440px) {
+  .skills-container {
+    width: 60%;
+    margin-top: 5rem;
+  }
 }
 
 .skills-header {
@@ -24,10 +43,26 @@ section {
   margin: 0;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .skills-header h3 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .skills-header h3 {
+    font-size: 5rem;
+  }
+}
 
 .skills-body {
   display: flex;
   flex-direction: column;
+}
+@media (min-width: 768px) {
+  .skills-body {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
 }
 
 .skill-box {
@@ -38,12 +73,27 @@ section {
   margin: auto;
   margin-top: 3rem;
 }
+@media (min-width: 1024px) {
+  .skill-box {
+    padding: 1rem 1rem;
+  }
+}
 
 .skillset-header {
   font-size: 3rem;
   margin: 0 0 4rem 0;
 }
+@media (min-width: 1024px) {
+  .skillset-header {
+    margin-bottom: 2rem;
+  }
+}
 
 .skillset-p {
   font-size: 1rem;
+}
+@media (min-width: 1440px) {
+  .skillset-p {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=Skills.css.map */

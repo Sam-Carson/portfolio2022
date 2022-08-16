@@ -3,7 +3,7 @@ import "../styles/Skills/Skills.css";
 
 export default function Skills() {
   return (
-    <section>
+    <section id="skills">
       <div className="skills-container">
         <div className="skills-header">
           <h3>Skills</h3>
@@ -11,7 +11,7 @@ export default function Skills() {
         <div className="skills-body">
           <div className="skill-box">
             <p className="skillset-header">Front-end Development</p>
-            <p className="skillset-p">HTML5, CSS3, SASS, JavaScript, React</p>
+            <p className="skillset-p">React, JavaScript, HTML5, CSS3, SASS</p>
           </div>
           <div className="skill-box">
             <p className="skillset-header">Back-end Development</p>

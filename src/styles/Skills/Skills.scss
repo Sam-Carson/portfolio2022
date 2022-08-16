@@ -5,8 +5,21 @@ section {
 }
 
 .skills-container {
-  height: fit-content;
-  width: 100%;
+  @include phoneSmall {
+    height: fit-content;
+    width: 100%;
+  }
+  @include tablet {
+    width: 90%;
+    margin: auto;
+  }
+  @include laptop {
+    width: 75%;
+  }
+  @include laptopLarge {
+    width: 60%;
+    margin-top: 5rem;
+  }
 }
 
 .skills-header {
@@ -20,6 +33,10 @@ section {
 .skills-body {
   display: flex;
   flex-direction: column;
+  @include tablet {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
 }
 
 .skill-box {
@@ -29,13 +46,22 @@ section {
   text-align: center;
   margin: auto;
   margin-top: 3rem;
+  @include laptop {
+    padding: 1rem 1rem;
+  }
 }
 
 .skillset-header {
   font-size: 3rem;
   margin: 0 0 4rem 0;
+  @include laptop {
+    margin-bottom: 2rem;
+  }
 }
 
 .skillset-p {
   font-size: 1rem;
+  @include laptopLarge {
+    font-size: 1.3rem;
+  }
 }

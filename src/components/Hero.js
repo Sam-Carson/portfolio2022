@@ -4,7 +4,7 @@ import "../styles/Hero/Hero.css";
 
 export default function Hero() {
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="home">
       <div className="banner">
         <div className="hero-section-left">
           <div className="header-container">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "../styles/Navbar/Navbar.css";
 
 export default function navbar() {
@@ -9,23 +10,51 @@ export default function navbar() {
         <p id="logo-smdc">smdc.</p>
       </div>
       <div className="navbar-links-container">
-        <a href="/home" className="navbar-link">
+        <Link
+          className="navbar-link"
+          to="/"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={600}
+        >
           Home
-        </a>
+        </Link>
         <span className="navbar-link-spacer">|</span>
-        <a href="/portfolio" className="navbar-link">
+        <Link
+          className="navbar-link"
+          to="portfolio"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={600}
+        >
           Portfolio
-        </a>
+        </Link>
         <span className="navbar-link-spacer">|</span>
 
-        <a href="/skills" className="navbar-link">
+        <Link
+          className="navbar-link"
+          to="skills"
+          spy={true}
+          smooth={true}
+          offset={75}
+          duration={600}
+        >
           Skills
-        </a>
+        </Link>
         <span className="navbar-link-spacer">|</span>
 
-        <a href="/aboutme" className="navbar-link">
+        <Link
+          className="navbar-link"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={600}
+        >
           About
-        </a>
+        </Link>
         <span className="navbar-link-spacer">|</span>
         <a href="/contact" className="navbar-link">
           Contact

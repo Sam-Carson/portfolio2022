@@ -112,4 +112,19 @@ $breakpoints: (
   font-size: 7rem;
   margin: 0;
   text-align: center;
+  @include tablet {
+    font-size: 6rem;
+  }
+  @include laptop {
+    font-size: 5rem;
+  }
+}
+
+@mixin fade-in {
+  transition: opacity 1s ease;
+}
+
+@mixin fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
 }

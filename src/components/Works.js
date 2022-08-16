@@ -3,7 +3,7 @@ import "../styles/Works/Works.css";
 
 export default function Works() {
   return (
-    <div className="works-section">
+    <div className="works-section" id="portfolio">
       <div className="works-header">
         <h3>Portfolio</h3>
         <p>Completed Works</p>
