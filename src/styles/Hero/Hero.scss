@@ -1,7 +1,6 @@
 @import "../../Variables/Variables.scss";
 
 * {
-  font-size: 1rem;
   font-family: $headerFont;
   font-weight: 600;
   color: $black;
@@ -44,7 +43,7 @@ h2 {
   margin: 0;
 }
 
-img {
+.img-hero {
   display: block;
   max-width: 400px;
   max-height: 400px;
@@ -58,25 +57,34 @@ img {
 .img-background-layer-1 {
   height: 400px;
   width: 400px;
-  background-color: $light-orange;
+  background-image: linear-gradient($light-orange, $light-yellow);
   position: absolute;
   z-index: 1;
-  border-radius: 50% 50% 50% 0%;
+  border-radius: 50% 0% 50% 0%;
 }
 
-.img-background-layer-2 {
-  height: 400px;
-  width: 400px;
-  background-color: $orange;
-  position: absolute;
-  z-index: 3;
-  border-radius: 50% 0% 50% 50%;
-}
+// .img-background-layer-1 {
+//   height: 400px;
+//   width: 400px;
+//   background-color: $light-orange;
+//   position: absolute;
+//   z-index: 1;
+//   border-radius: 50% 50% 50% 0%;
+// }
+
+// .img-background-layer-2 {
+//   height: 400px;
+//   width: 400px;
+//   background-color: $orange;
+//   position: absolute;
+//   z-index: 3;
+//   border-radius: 50% 0% 50% 50%;
+// }
 
 .img-background-layer-3 {
   width: 3px;
   height: 600px;
-  background-color: $orange;
+  background-image: linear-gradient($light-orange 50%, $light-yellow 50%);
   z-index: 0;
   position: absolute;
 }
@@ -84,7 +92,8 @@ img {
 .img-background-layer-4 {
   width: 3px;
   height: 600px;
-  background-color: $light-orange;
+  background-image: linear-gradient($light-orange 30%, $light-yellow 70%);
+  // background-color: $light-orange;
   z-index: 0;
   position: absolute;
   transform: rotate(-45deg);
@@ -93,7 +102,7 @@ img {
 .img-background-layer-5 {
   width: 3px;
   height: 600px;
-  background-color: $light-orange;
+  background-color: $light-yellow;
   z-index: 0;
   position: absolute;
   transform: rotate(-90deg) translateX(-45px);

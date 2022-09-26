@@ -1,279 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
-.works-section {
-  width: 100%;
-  height: 70vh;
-  padding: 0rem 1rem;
-  background-color: #f2f1ef;
+html {
+  font-size: 16px;
 }
+
+section {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 @media (min-width: 360px) {
-  .works-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 425px) {
-  .works-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) {
-  .works-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) {
-  .works-section {
-    padding: 0 8%;
-    margin: auto;
-  }
-}
-@media (min-width: 1024px) {
-  .works-section {
-    width: 80%;
-    padding: 0;
-    margin: auto;
-    margin-top: 4rem;
+  .projects-container {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    width: 100%;
   }
 }
-
-.img-tester {
-  width: 100%;
-  height: 500px;
-  background-color: #08080c;
-}
 @media (min-width: 768px) {
-  .img-tester {
-    margin-top: 2rem;
+  .projects-container {
+    width: 90%;
+    margin: auto;
   }
 }
 @media (min-width: 1024px) {
-  .img-tester {
-    width: 500px;
-    height: 100%;
-    margin-top: 0;
-    grid-row-start: 1;
-    grid-row-end: 5;
+  .projects-container {
+    width: 75%;
   }
 }
 @media (min-width: 1440px) {
-  .img-tester {
-    width: 550px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .img-tester-img-right {
-    grid-column-start: 2;
+  .projects-container {
+    width: 60%;
+    margin-top: 5rem;
   }
 }
 
 .works-header {
-  width: 100%;
-  height: 8vh;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .works-header {
-    margin-bottom: 3rem;
-  }
+  text-align: center;
 }
 
 .works-header h3 {
-  font-size: 7rem;
-  margin: 0;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .works-header h3 {
-    font-size: 6rem;
-  }
-}
-@media (min-width: 1024px) {
-  .works-header h3 {
-    font-size: 5rem;
-  }
-}
-@media (min-width: 1024px) {
-  .works-header h3 {
-    font-size: 5rem;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
+  font-size: 5rem;
+  margin: 1rem 0 2rem 0;
+  width: 100%;
 }
 
 .works-header p {
-  margin: 0;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 0 0 2rem 0;
+  width: 100%;
 }
-@media (min-width: 1024px) {
-  .works-header p {
-    font-size: 1.5rem;
-  }
+
+.flex-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 2rem 0 3rem 0;
+}
+
+.section-first,
+.section-second {
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.section-title {
+  margin: auto;
+  left: 50%;
+  top: 4.7rem;
+  position: relative;
+  color: #fefcfb;
+  font-size: 5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: #08080c;
+}
+
+.project-img {
+  background-image: url(../../images/spotify_orange_green_heahphones.png);
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
 }
 
 .project-container {
-  margin-top: 3rem;
-}
-@media (min-width: 768px) {
-  .project-container {
-    margin-top: 5rem;
-  }
-}
-@media (min-width: 1024px) {
-  .project-container {
-    margin: 3rem 0 2rem 0;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0.5rem;
-    -moz-column-gap: 1.3rem;
-         column-gap: 1.3rem;
-  }
-}
-@media (min-width: 1440px) {
-  .project-container {
-    row-gap: 1.2rem;
-  }
-}
-
-.project-container h3 {
-  font-size: 8rem;
-  margin: 1.7rem 0;
-}
-@media (min-width: 1024px) {
-  .project-container h3 {
-    font-size: 3rem;
-    margin: 0;
-  }
-}
-
-.project-container p {
-  font-size: 1.5rem;
-}
-@media (min-width: 1024px) {
-  .project-container p {
-    grid-row-start: 3;
-    grid-row-end: 3;
-    font-size: 1rem;
-    margin: 0;
-  }
-}
-
-.project-tech-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 4rem;
-}
-@media (min-width: 1024px) {
-  .project-tech-container {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    margin-top: 0;
-  }
-}
-
-.project-tech {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  background-color: #f07c42;
-  color: #fefcfb;
-  margin: 0 0.5rem 0 1rem;
-  font-size: 2rem;
-}
-@media (min-width: 1024px) {
-  .project-tech {
-    font-size: 0.7rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .first-tech {
-    margin-left: 0;
-  }
-}
-
-.works-container {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 1024px) {
-  .works-container {
-    margin-top: 2rem;
-  }
-}
-
-.links-btn-container {
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: row;
-}
-@media (min-width: 1024px) {
-  .links-btn-container {
-    grid-row-start: 4;
-    grid-row-end: 4;
-    margin-top: 0.4rem;
-  }
-}
-
-.links-github-btn,
-.links-visit-btn {
-  padding: 0.8rem 1.5rem;
-  border: 1px solid #08080c;
-  width: 45%;
-  height: 5rem;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .links-github-btn,
-.links-visit-btn {
-    height: 1.5rem;
-    width: 20%;
-    padding: 0.2rem;
-  }
-}
-
-.links-github-btn {
-  background-color: #08080c;
-  color: #fefcfb;
-}
-
-.links-btn-container .links-visit-btn a,
-.links-btn-container .links-github-btn a {
-  color: white;
-  text-decoration: none;
-  font-size: 2.7rem;
-}
-@media (min-width: 1024px) {
-  .links-btn-container .links-visit-btn a,
-.links-btn-container .links-github-btn a {
-    font-size: 1rem;
-  }
-}
-
-.links-btn-container .links-github-btn a:hover {
-  text-decoration: underline;
-}
-
-.links-btn-container .links-visit-btn a {
-  color: #08080c;
-  text-decoration: none;
-}
-
-.links-btn-container .links-visit-btn a:hover {
-  text-decoration: underline;
+  position: relative;
 }/*# sourceMappingURL=Works.css.map */

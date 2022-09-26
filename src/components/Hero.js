@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/pro_headshot_square.jpg";
+// import { DiReact } from "react-icons/di";
 import "../styles/Hero/Hero.css";
 
 export default function Hero() {
@@ -16,7 +17,7 @@ export default function Hero() {
             </h2>
           </div>
           <div className="header-container">
-            <h2 className="header">BASED IN BELLINGHAM</h2>
+            <h2 className="header">SPECIALISING IN REACT</h2>
           </div>
           <div className="hero-staples">
             <h5 id="hero-staples-first">FRONT-END</h5>
@@ -36,13 +37,12 @@ export default function Hero() {
         </div>
         <div className="hero-section-right">
           <div className="img-background-layer-1"></div>
-          <div className="img-background-layer-2"></div>
           <div className="img-background-layer-3"></div>
           <div className="img-background-layer-4"></div>
           <div className="img-background-layer-5"></div>
 
           <div className="headshot-img">
-            <img src={image} className="img" alt="headshot"></img>
+            <img src={image} className="img-hero" alt="headshot"></img>
           </div>
         </div>
       </div>

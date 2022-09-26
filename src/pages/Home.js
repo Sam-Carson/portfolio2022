@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import Ticker from "../components/Ticker";
-import Works from "../components/Works";
-import Skills from "../components/Skills";
+import { Hero, Navbar, Works, Skills, About } from "../components";
 import RotateLoader from "react-spinners/RotateLoader";
 
 import "../styles/Home-comp/Home-comp.css";
@@ -19,20 +15,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <>
       {loading ? (
         <div className="loader-container">
           <RotateLoader size={15} color={"#f07c42"} loading={loading} />
         </div>
       ) : (
         <div>
-          <Navbar />
-          <Hero />
-          <Ticker />
+          {/* <Navbar /> */}
+          {/* <Hero /> */}
           <Works />
           <Skills />
+          <About />
         </div>
       )}
-    </div>
+    </>
   );
 }

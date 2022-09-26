@@ -1,0 +1,9 @@
+@import "../../Variables/Variables.scss";
+
+.about-header {
+  @include section-header;
+}
+
+.about-header h3 {
+  @include section-header-h3;
+}

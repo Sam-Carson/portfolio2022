@@ -50,20 +50,5 @@ export default function Ticker() {
         </div>
       </div>
     </section>
-
-    // <div className="ticker-container">
-    //   <div className="ticker-banner">
-    //     <div className="ticker-spacer"></div> <h5>REACT</h5>
-    //     <div className="ticker-spacer"></div> <h5>HTML5</h5>
-    //     <div className="ticker-spacer"></div> <h5>CSS3</h5>
-    //     <div className="ticker-spacer"></div> <h5>JAVASCRIPT</h5>
-    //     <div className="ticker-spacer"></div> <h5>C#</h5>
-    //     <div className="ticker-spacer"></div> <h5>ASP.NET</h5>
-    //     <div className="ticker-spacer"></div> <h5>SQL</h5>
-    //     <div className="ticker-spacer"></div> <h5>NODE.JS</h5>
-    //     <div className="ticker-spacer"></div> <h5>SASS</h5>
-    //     <div className="ticker-spacer"></div> <h5>EXPRESS</h5>
-    //   </div>
-    // </div>
   );
 }

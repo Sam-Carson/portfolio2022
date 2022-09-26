@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   background-color: rgba($color: $background, $alpha: 0.6);
-  // box-shadow: 0 1px 5px $background-light;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-clip: padding-box;

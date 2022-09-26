@@ -12,7 +12,7 @@ export default function navbar() {
       <div className="navbar-links-container">
         <Link
           className="navbar-link"
-          to="/"
+          to="home"
           spy={true}
           smooth={true}
           offset={50}
@@ -26,7 +26,7 @@ export default function navbar() {
           to="portfolio"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-115}
           duration={600}
         >
           Portfolio
@@ -38,7 +38,7 @@ export default function navbar() {
           to="skills"
           spy={true}
           smooth={true}
-          offset={75}
+          offset={-15}
           duration={600}
         >
           Skills
@@ -56,7 +56,7 @@ export default function navbar() {
           About
         </Link>
         <span className="navbar-link-spacer">|</span>
-        <a href="/contact" className="navbar-link">
+        <a href="/" className="navbar-link">
           Contact
         </a>
       </div>

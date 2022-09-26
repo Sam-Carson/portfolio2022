@@ -6,16 +6,18 @@ $background: #f2f1ef;
 $background-light: #dddcdaec;
 $yellow: #ffbf47;
 $light-yellow: #ffd485;
+$medium-yellow: #f4c05f;
 $orange: #f07c42;
 $light-orange: #f18955;
-
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Oxygen', sans-serif;
-// font-family: 'Roboto', sans-serif;
+$medium-orange: #ea8350;
 
 $homeFont: "Oxygen", sans-serif;
 $textFont: "Roboto", sans-serif;
 $headerFont: "Bai Jamjuree", sans-serif;
+
+html {
+  font-size: 16px;
+}
 
 //@media breakpoint definitions
 $breakpoints: (
@@ -100,6 +102,25 @@ $breakpoints: (
   flex-direction: column;
 }
 
+@mixin mobile-projects-flex-section {
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+
+@mixin mobile-projects-description {
+  margin: auto;
+  left: 50%;
+  top: 4.7rem;
+  position: relative;
+  color: $white;
+  font-size: 5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
 // creates mobile section header
 @mixin section-header {
   width: 100%;
@@ -110,7 +131,7 @@ $breakpoints: (
 
 @mixin section-header-h3 {
   font-size: 7rem;
-  margin: 0;
+  margin-top: 4rem;
   text-align: center;
   @include tablet {
     font-size: 6rem;

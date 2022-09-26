@@ -52,6 +52,18 @@ section {
   }
 }
 
+.box2 {
+  box-shadow: 5px 5px $medium-orange;
+}
+
+.box3 {
+  box-shadow: 5px 5px $medium-yellow;
+}
+
+.box4 {
+  box-shadow: 5px 5px $light-yellow;
+}
+
 .skillset-header {
   font-size: 3rem;
   margin: 0 0 4rem 0;

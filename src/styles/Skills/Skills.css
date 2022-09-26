@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
+html {
+  font-size: 16px;
+}
+
 section {
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -40,7 +44,7 @@ section {
 
 .skills-header h3 {
   font-size: 7rem;
-  margin: 0;
+  margin-top: 4rem;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -78,6 +82,18 @@ section {
   .skill-box {
     padding: 1rem 1rem;
   }
+}
+
+.box2 {
+  box-shadow: 5px 5px #ea8350;
+}
+
+.box3 {
+  box-shadow: 5px 5px #f4c05f;
+}
+
+.box4 {
+  box-shadow: 5px 5px #ffd485;
 }
 
 .skillset-header {

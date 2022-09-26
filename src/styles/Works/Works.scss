@@ -1,202 +1,67 @@
 @import "../../Variables/Variables.scss";
 
-.works-section {
-  width: 100%;
-  height: 70vh;
-  padding: 0rem 1rem;
-  background-color: $background;
-  @include responsive;
-  @include tablet {
-    padding: 0 8%;
-    margin: auto;
-  }
-  @include laptop {
-    width: 80%;
-    padding: 0;
-    margin: auto;
-    margin-top: 4rem;
-
-    height: fit-content;
-  }
+section {
+  height: fit-content;
 }
 
-// ^1024px becomes grid item 1
-.img-tester {
-  width: 100%;
-  height: 500px;
-  background-color: $black;
+.projects-container {
+  @include phoneSmall {
+    height: fit-content;
+    width: 100%;
+  }
   @include tablet {
-    margin-top: 2rem;
+    width: 90%;
+    margin: auto;
   }
   @include laptop {
-    width: 500px;
-    height: 100%;
-    margin-top: 0;
-    grid-row-start: 1;
-    grid-row-end: 5;
+    width: 75%;
   }
   @include laptopLarge {
-    width: 550px;
-  }
-}
-
-.img-tester-img-right {
-  @include laptop {
-    grid-column-start: 2;
+    width: 60%;
+    margin-top: 5rem;
   }
 }
 
 .works-header {
-  @include section-header;
-  @include tablet {
-    margin-bottom: 3rem;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .works-header h3 {
-  @include section-header-h3;
-  @include laptop {
-    font-size: 5rem;
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
+  font-size: 5rem;
+  margin: 1rem 0 2rem 0;
+  width: 100%;
 }
 
 .works-header p {
-  margin: 0;
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 2.5rem;
-  @include laptop {
-    font-size: 1.5rem;
-  }
-}
-
-// ^1024px becomes grid container
-.project-container {
-  margin-top: 3rem;
-  @include tablet {
-    margin-top: 5rem;
-  }
-  @include laptop {
-    margin: 3rem 0 2rem 0;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0.5rem;
-    column-gap: 1.3rem;
-  }
-  @include laptopLarge {
-    row-gap: 1.2rem;
-  }
-}
-
-.project-container h3 {
-  font-size: 8rem;
-  margin: 1.7rem 0;
-  @include laptop {
-    font-size: 3rem;
-    margin: 0;
-  }
-}
-
-.project-container p {
-  font-size: 1.5rem;
-  @include laptop {
-    grid-row-start: 3;
-    grid-row-end: 3;
-    font-size: 1rem;
-    margin: 0;
-  }
-}
-
-.project-tech-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 4rem;
-  @include laptop {
-    grid-row-start: 1;
-    grid-row-end: 1;
-    margin-top: 0;
-  }
-}
-
-.project-tech {
-  height: fit-content;
-  width: fit-content;
-  padding: 0.5rem 1rem;
-  background-color: $orange;
-  color: $white;
-  margin: 0 0.5rem 0 1rem;
   font-size: 2rem;
-  @include laptop {
-    font-size: 0.7rem;
-  }
+  margin: 0 0 2rem 0;
+  width: 100%;
 }
 
-.first-tech {
-  @include laptop {
-    margin-left: 0;
-  }
-}
-
-.works-container {
+.flex-container {
+  width: 100%;
   height: fit-content;
-  display: flex;
-  flex-direction: column;
-  @include laptop {
-    margin-top: 2rem;
-  }
+  margin: 2rem 0 3rem 0;
 }
 
-.links-btn-container {
-  display: flex;
-  margin-top: 2rem;
-  flex-direction: row;
-  @include laptop {
-    grid-row-start: 4;
-    grid-row-end: 4;
-    margin-top: 0.4rem;
-  }
+.section-first,
+.section-second {
+  @include mobile-projects-flex-section;
 }
 
-.links-github-btn,
-.links-visit-btn {
-  padding: 0.8rem 1.5rem;
-  border: 1px solid $black;
-  width: 45%;
-  height: 5rem;
-  text-align: center;
-  @include laptop {
-    height: 1.5rem;
-    width: 20%;
-    padding: 0.2rem;
-  }
-}
-
-.links-github-btn {
+.section-title {
+  @include mobile-projects-description;
   background-color: $black;
-  color: $white;
 }
 
-.links-btn-container .links-visit-btn a,
-.links-btn-container .links-github-btn a {
-  color: white;
-  text-decoration: none;
-  font-size: 2.7rem;
-  @include laptop {
-    font-size: 1rem;
-  }
+.project-img {
+  background-image: url(../../images/spotify_orange_green_heahphones.png);
+  @include mobile-projects-flex-section;
 }
 
-.links-btn-container .links-github-btn a:hover {
-  text-decoration: underline;
-}
-
-.links-btn-container .links-visit-btn a {
-  color: $black;
-  text-decoration: none;
-}
-
-.links-btn-container .links-visit-btn a:hover {
-  text-decoration: underline;
+.project-container {
+  position: relative;
 }
