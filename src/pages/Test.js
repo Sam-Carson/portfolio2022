@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import { Navigation } from "../components";
 export default function Test() {
   return (
     <div>
-      <Navbar />
+      <Navigation />
     </div>
   );
 }

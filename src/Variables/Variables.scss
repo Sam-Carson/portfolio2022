@@ -149,3 +149,29 @@ $breakpoints: (
   opacity: 0;
   transition: opacity 1s ease;
 }
+
+////////////////////
+///
+///
+@mixin mobile-nav {
+  width: 100%;
+  background-color: rgba($color: $background, $alpha: 0.9);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-clip: padding-box;
+  position: fixed;
+  color: $orange;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  transition-timing-function: ease;
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+@mixin mobile-nav-btn {
+  padding: 2rem 2rem 2rem 0;
+}

@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
+html {
+  font-size: 16px;
+}
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  nav {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.navigation.hide {
+  width: 100%;
+  background-color: rgba(242, 241, 239, 0.9);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-clip: padding-box;
+  position: fixed;
+  color: #f07c42;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  transition-timing-function: ease;
+  height: 8vh;
+  transition: height 1s;
+  transition-timing-function: ease;
+  z-index: 1;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .navigation.hide {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.navigation.show {
+  width: 100%;
+  background-color: rgba(242, 241, 239, 0.9);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-clip: padding-box;
+  position: fixed;
+  color: #f07c42;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  transition-timing-function: ease;
+  height: 100%;
+  transition: height 1s;
+  transition-timing-function: ease;
+  z-index: 2;
+}
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .navigation.show {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+
+.nav-icon.active {
+  padding: 2rem 2rem 2rem 0;
+  transform: rotate(45deg);
+  transition: 1s;
+  z-index: 3;
+}
+
+.nav-icon.inactive {
+  padding: 2rem 2rem 2rem 0;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+
+.mobile-resume-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1rem;
+  padding-top: 0.8rem;
+  color: #f07c42;
+  font-size: 2.5rem;
+  border: 1px solid #f07c42;
+  border-radius: 10px;
+  margin: 1rem 0 1rem 3rem;
+  top: 50%;
+  transform: translateY(30%);
+}
+
+.mobile-resume-link {
+  text-decoration: none;
+}/*# sourceMappingURL=Navigation.css.map */
