@@ -1,0 +1,58 @@
+@import "../../Variables/Variables.scss";
+
+.box-container {
+  width: 100%;
+  height: fit-content;
+  background-color: $white;
+  border: 3px solid rgb(204, 204, 204);
+  border-radius: 25px;
+  margin: auto;
+  text-align: center;
+  transform: translateY(-12vh);
+  h3 {
+    font-size: 5rem;
+  }
+  p {
+    font-family: $homeFont;
+    font-size: 1.3rem;
+    margin: 1rem 3rem;
+  }
+}
+
+ul li {
+  font-size: 1.7rem;
+  font-family: $homeFont;
+  line-height: 0.5rem;
+}
+
+.list-top {
+  color: $orange;
+}
+
+.illustration-container-box {
+  margin-top: 8rem;
+}
+
+.illustration {
+  width: 40%;
+  height: 100%;
+}
+
+.skill-1,
+.skill-2,
+.skill-3 {
+  border-bottom: 1px solid #bcbdbe;
+}
+
+.breakdown-headers {
+  color: $orange;
+  font-size: 3rem;
+}
+
+.frameworks-breakdown {
+  margin: 5rem 0;
+}
+
+.libraries-breakdown {
+  margin-bottom: 5rem;
+}

@@ -1,7 +1,5 @@
 import React from "react";
 import image from "../images/pro_headshot_square.jpg";
-// import { DiReact } from "react-icons/di";
-import "../styles/Hero/Hero.css";
 
 export default function Hero() {
   return (

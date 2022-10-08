@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Hero, Header, Works, Skills, About } from "../components";
+import { Navigation, Introduction, About, Skills } from "../components";
 import RotateLoader from "react-spinners/RotateLoader";
 
 import "../styles/Home-comp/Home-comp.css";
@@ -21,13 +21,13 @@ export default function Home() {
           <RotateLoader size={15} color={"#f07c42"} loading={loading} />
         </div>
       ) : (
-        <div>
-          <Header />
-          <Hero />
-          <Works />
-          <Skills />
+        <>
+          <Navigation />
+          <Introduction />
+
           <About />
-        </div>
+          {/* <Skills /> */}
+        </>
       )}
     </>
   );

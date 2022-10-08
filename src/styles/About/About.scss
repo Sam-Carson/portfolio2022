@@ -1,9 +1,37 @@
 @import "../../Variables/Variables.scss";
 
-.about-header {
-  @include section-header;
+.about-container {
+  margin: auto;
+  width: 90vw;
+  margin-top: 15vh;
 }
 
-.about-header h3 {
-  @include section-header-h3;
+.about-section {
+  width: 100%;
+  height: 80vh;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  p {
+    font-size: 2.7rem;
+    font-family: $homeFont;
+    text-align: center;
+    line-height: 6rem;
+  }
+}
+
+.diploma-link-container {
+  margin-top: 5rem;
+}
+
+.diploma-link {
+  color: $yellow;
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
 }

@@ -45,8 +45,40 @@ html {
   }
 }
 
-section {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}/*# sourceMappingURL=Skills.css.map */
+p {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.headers-container {
+  text-align: left;
+  padding: 0 5vw;
+  text-align: center;
+  margin: 15vh 0 17vh 0;
+  z-index: 1;
+}
+.headers-container h3 {
+  font-size: 8rem;
+  font-weight: 700;
+}
+.headers-container p {
+  font-size: 3rem;
+  font-family: "Oxygen", sans-serif;
+}
+
+.avatar-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  position: absolute;
+  transform: translate(20vw, -14vh);
+}
+.avatar-container img {
+  height: auto;
+  width: 60vw;
+  margin: auto;
+  transform: translateY(10px);
+  border-radius: 50%;
+  position: relative;
+}/*# sourceMappingURL=Introduction.css.map */

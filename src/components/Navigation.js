@@ -16,7 +16,7 @@ export default function Navigation() {
       <IconContext.Provider
         value={{
           className: `nav-icon ${showMenu ? "active" : "inactive"}`,
-          size: "6rem",
+          size: "5rem",
         }}
       >
         <FaEllipsisV onClick={() => setShowMenu(!showMenu)} />

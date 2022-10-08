@@ -1,6 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600;700&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
 html {
   font-size: 16px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+@media (min-width: 360px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  section {
+    flex-direction: row;
+  }
+}
+@media (min-width: 360px) {
+  section {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (min-width: 768px) {
+  section .container {
+    margin: auto;
+    width: 85vw;
+  }
+}
+@media (min-width: 1024px) {
+  section .container {
+    width: 80vw;
+  }
+}
+@media (min-width: 1440px) {
+  section .container {
+    width: 75vw;
+  }
+}
+@media (min-width: 2560px) {
+  section .container {
+    width: 60vw;
+  }
 }
 
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -13,7 +55,6 @@ html {
 .navigation.hide {
   width: 100%;
   background-color: rgba(242, 241, 239, 0.9);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-clip: padding-box;
   position: fixed;
   color: #f07c42;
@@ -37,7 +78,6 @@ html {
 .navigation.show {
   width: 100%;
   background-color: rgba(242, 241, 239, 0.9);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-clip: padding-box;
   position: fixed;
   color: #f07c42;
@@ -59,14 +99,17 @@ html {
 }
 
 .nav-icon.active {
-  padding: 2rem 2rem 2rem 0;
+  color: #08080c;
+  padding: 2.5rem 2.5rem 2rem 0;
+  color: #08080c;
   transform: rotate(45deg);
   transition: 1s;
   z-index: 3;
 }
 
 .nav-icon.inactive {
-  padding: 2rem 2rem 2rem 0;
+  color: #08080c;
+  padding: 2.5rem 2.5rem 2rem 0;
   transform: rotate(0deg);
   transition: 1s;
 }

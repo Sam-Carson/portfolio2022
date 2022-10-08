@@ -4,77 +4,77 @@ section {
   height: fit-content;
 }
 
-.skills-container {
-  @include phoneSmall {
-    height: fit-content;
-    width: 100%;
-  }
-  @include tablet {
-    width: 90%;
-    margin: auto;
-  }
-  @include laptop {
-    width: 75%;
-  }
-  @include laptopLarge {
-    width: 60%;
-    margin-top: 5rem;
-  }
-}
+// .skills-container {
+//   @include phoneSmall {
+//     height: fit-content;
+//     width: 100%;
+//   }
+//   @include tablet {
+//     width: 90%;
+//     margin: auto;
+//   }
+//   @include laptop {
+//     width: 75%;
+//   }
+//   @include laptopLarge {
+//     width: 60%;
+//     margin-top: 5rem;
+//   }
+// }
 
-.skills-header {
-  @include section-header;
-}
+// .skills-header {
+//   @include section-header;
+// }
 
-.skills-header h3 {
-  @include section-header-h3;
-}
+// .skills-header h3 {
+//   @include section-header-h3;
+// }
 
-.skills-body {
-  display: flex;
-  flex-direction: column;
-  @include tablet {
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-  }
-}
+// .skills-body {
+//   display: flex;
+//   flex-direction: column;
+//   @include tablet {
+//     margin-bottom: 3rem;
+//     margin-top: 2rem;
+//   }
+// }
 
-.skill-box {
-  width: 90%;
-  border: solid 5px $black;
-  padding: 4rem 1rem;
-  text-align: center;
-  margin: auto;
-  margin-top: 3rem;
-  box-shadow: 5px 5px $orange;
-  @include laptop {
-    padding: 1rem 1rem;
-  }
-}
+// .skill-box {
+//   width: 90%;
+//   border: solid 5px $black;
+//   padding: 4rem 1rem;
+//   text-align: center;
+//   margin: auto;
+//   margin-top: 3rem;
+//   box-shadow: 5px 5px $orange;
+//   @include laptop {
+//     padding: 1rem 1rem;
+//   }
+// }
 
-.box2 {
-  box-shadow: 5px 5px $medium-orange;
-}
+// .box2 {
+//   box-shadow: 5px 5px $medium-orange;
+// }
 
-.box3 {
-  box-shadow: 5px 5px $medium-yellow;
-}
+// .box3 {
+//   box-shadow: 5px 5px $medium-yellow;
+// }
 
-.box4 {
-  box-shadow: 5px 5px $light-yellow;
-}
+// .box4 {
+//   box-shadow: 5px 5px $light-yellow;
+// }
 
-.skillset-header {
-  font-size: 3rem;
-  margin: 0 0 4rem 0;
-  @include laptop {
-    margin-bottom: 2rem;
-  }
-}
+// .skillset-header {
+//   font-size: 3rem;
+//   margin: 0 0 4rem 0;
+//   @include laptop {
+//     margin-bottom: 2rem;
+//   }
+// }
 
-.skillset-p {
-  font-size: 1rem;
-  @include laptopLarge {
-    font-size: 1.3rem;
-  }
-}
+// .skillset-p {
+//   font-size: 1rem;
+//   @include laptopLarge {
+//     font-size: 1.3rem;
+//   }
+// }

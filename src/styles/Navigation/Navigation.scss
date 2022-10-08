@@ -24,6 +24,7 @@ nav {
 
 .nav-icon.active {
   @include mobile-nav-btn;
+  color: $black;
   transform: rotate(45deg);
   transition: 1s;
   z-index: 3;

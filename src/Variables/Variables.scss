@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600;700&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
 
 $black: #08080c;
 $white: #fefcfb;
@@ -17,6 +17,7 @@ $headerFont: "Bai Jamjuree", sans-serif;
 
 html {
   font-size: 16px;
+  font-family: $headerFont;
 }
 
 //@media breakpoint definitions
@@ -34,12 +35,11 @@ $breakpoints: (
     @include mobile-flex;
   }
   @include phoneLarge() {
-    @include mobile-flex;
   }
   @include tablet() {
-    @include mobile-flex;
   }
   @include laptop() {
+    @include laptop-flex;
   }
   @include laptopLarge() {
   }
@@ -83,17 +83,37 @@ $breakpoints: (
   }
 }
 
-@mixin list-spacer {
-  height: 1rem;
-  width: 1rem;
-  background-color: $orange;
-  border-radius: 50%;
-  margin: 0;
-}
-
-@mixin mobile-section-headers {
-  h3 {
-    font-size: 4rem;
+// sets all sections responsive for each <section/>
+@mixin section-responsive {
+  @include responsive;
+  @include phoneSmall {
+    width: 100%;
+    height: fit-content;
+  }
+  @include phoneLarge {
+  }
+  @include tablet {
+  }
+  @include tablet {
+    .container {
+      margin: auto;
+      width: 85vw;
+    }
+  }
+  @include laptop {
+    .container {
+      width: 80vw;
+    }
+  }
+  @include laptopLarge {
+    .container {
+      width: 75vw;
+    }
+  }
+  @include desktop {
+    .container {
+      width: 60vw;
+    }
   }
 }
 
@@ -102,52 +122,12 @@ $breakpoints: (
   flex-direction: column;
 }
 
-@mixin mobile-projects-flex-section {
-  width: 100%;
-  height: 40vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.7;
+@mixin laptop-flex {
+  flex-direction: row;
 }
 
-@mixin mobile-projects-description {
-  margin: auto;
-  left: 50%;
-  top: 4.7rem;
-  position: relative;
-  color: $white;
-  font-size: 5rem;
-  text-align: center;
-  transform: translate(-50%, -50%);
-}
-
-// creates mobile section header
-@mixin section-header {
-  width: 100%;
-  height: 8vh;
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin section-header-h3 {
-  font-size: 7rem;
-  margin-top: 4rem;
-  text-align: center;
-  @include tablet {
-    font-size: 6rem;
-  }
-  @include laptop {
-    font-size: 5rem;
-  }
-}
-
-@mixin fade-in {
-  transition: opacity 1s ease;
-}
-
-@mixin fade-out {
-  opacity: 0;
-  transition: opacity 1s ease;
+section {
+  @include section-responsive;
 }
 
 ////////////////////
@@ -156,8 +136,6 @@ $breakpoints: (
 @mixin mobile-nav {
   width: 100%;
   background-color: rgba($color: $background, $alpha: 0.9);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -30px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   background-clip: padding-box;
   position: fixed;
   color: $orange;
@@ -173,5 +151,6 @@ $breakpoints: (
 }
 
 @mixin mobile-nav-btn {
-  padding: 2rem 2rem 2rem 0;
+  color: $black;
+  padding: 2.5rem 2.5rem 2rem 0;
 }
