@@ -1,14 +1,14 @@
 @import "../../Variables/Variables.scss";
 
 .box-container {
-  width: 100%;
+  width: 90%;
   height: fit-content;
   background-color: $white;
   border: 3px solid rgb(204, 204, 204);
   border-radius: 25px;
   margin: auto;
+  margin-top: -5vh;
   text-align: center;
-  transform: translateY(-12vh);
   h3 {
     font-size: 5rem;
   }
@@ -49,10 +49,10 @@ ul li {
   font-size: 3rem;
 }
 
-.frameworks-breakdown {
+.skills-top {
   margin: 5rem 0;
 }
 
-.libraries-breakdown {
+.skills-bottom {
   margin-bottom: 5rem;
 }

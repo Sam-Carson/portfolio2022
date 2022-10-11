@@ -9,7 +9,6 @@ nav {
 .navigation.hide {
   @include mobile-nav;
   height: 8vh;
-  transition: height 1s;
   transition-timing-function: ease;
   z-index: 1;
 }
@@ -17,22 +16,27 @@ nav {
 .navigation.show {
   @include mobile-nav;
   height: 100%;
-  transition: height 1s;
   transition-timing-function: ease;
   z-index: 2;
+}
+
+nav.scrollShow {
+  transition: ease-in 1000ms;
+}
+nav.scrollHide {
+  transition: ease-out 1000ms;
+  transform: translateY(-8vh);
 }
 
 .nav-icon.active {
   @include mobile-nav-btn;
   color: $black;
-  transform: rotate(45deg);
   transition: 1s;
   z-index: 3;
 }
 
 .nav-icon.inactive {
   @include mobile-nav-btn;
-  transform: rotate(0deg);
   transition: 1s;
 }
 

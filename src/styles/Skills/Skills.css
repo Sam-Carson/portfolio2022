@@ -43,10 +43,4 @@ html {
   section .container {
     width: 60vw;
   }
-}
-
-section {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }/*# sourceMappingURL=Skills.css.map */

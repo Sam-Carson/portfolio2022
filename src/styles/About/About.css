@@ -48,7 +48,7 @@ html {
 .about-container {
   margin: auto;
   width: 90vw;
-  margin-top: 15vh;
+  margin-top: 18vh;
 }
 
 .about-section {
@@ -57,6 +57,7 @@ html {
   background-color: #08080c;
   color: #fefcfb;
   text-align: center;
+  padding-bottom: 7vh;
 }
 .about-section h3 {
   font-size: 5rem;

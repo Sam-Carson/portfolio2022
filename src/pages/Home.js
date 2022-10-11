@@ -26,7 +26,7 @@ export default function Home() {
           <Introduction />
 
           <About />
-          {/* <Skills /> */}
+          <Skills />
         </>
       )}
     </>

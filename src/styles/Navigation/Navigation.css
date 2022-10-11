@@ -64,7 +64,6 @@ html {
   justify-content: space-between;
   transition-timing-function: ease;
   height: 8vh;
-  transition: height 1s;
   transition-timing-function: ease;
   z-index: 1;
 }
@@ -87,7 +86,6 @@ html {
   justify-content: space-between;
   transition-timing-function: ease;
   height: 100%;
-  transition: height 1s;
   transition-timing-function: ease;
   z-index: 2;
 }
@@ -98,11 +96,19 @@ html {
   }
 }
 
+nav.scrollShow {
+  transition: ease-in 1000ms;
+}
+
+nav.scrollHide {
+  transition: ease-out 1000ms;
+  transform: translateY(-8vh);
+}
+
 .nav-icon.active {
   color: #08080c;
   padding: 2.5rem 2.5rem 2rem 0;
   color: #08080c;
-  transform: rotate(45deg);
   transition: 1s;
   z-index: 3;
 }
@@ -110,7 +116,6 @@ html {
 .nav-icon.inactive {
   color: #08080c;
   padding: 2.5rem 2.5rem 2rem 0;
-  transform: rotate(0deg);
   transition: 1s;
 }
 
