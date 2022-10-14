@@ -1,10 +1,11 @@
 export { default as About } from "./About";
 export { default as Navbar } from "./Navbar";
 export { default as SplashScreen } from "./SplashScreen";
-export { default as Projects } from "./Projects";
+export { default as Works } from "./Works";
 export { default as SlideOutNav } from "./SlideOutNav";
 export { default as Navigation } from "./Navigation";
 export { default as Header } from "./Header";
 export { default as Introduction } from "./Introduction";
 export { default as Skills } from "./Skills";
 export { default as Box } from "./Box";
+export { default as ProjectComponent } from "./ProjectComponent";

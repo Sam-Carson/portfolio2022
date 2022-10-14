@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { SlideOutNav } from "./index";
 import { IoIosMenu } from "react-icons/io";
 import { IconContext } from "react-icons";
-
 import "../styles/Navigation/Navigation.css";
 
 export default function Navigation() {

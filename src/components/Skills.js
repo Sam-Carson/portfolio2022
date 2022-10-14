@@ -6,7 +6,7 @@ import "../styles/Skills/Skills.css";
 export default function Skills() {
   return (
     <section className="skills-section">
-      <div className="section-container">
+      <div className="section-container skills-container">
         <Box />
       </div>
     </section>

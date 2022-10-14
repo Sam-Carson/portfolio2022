@@ -45,6 +45,51 @@ html {
   }
 }
 
-.skills-container {
-  z-index: 10;
-}/*# sourceMappingURL=Skills.css.map */
+.projects-section {
+  background-color: #08080c;
+  padding-top: 8vh;
+  transform: translateY(-8vh);
+}
+
+.project-container {
+  width: 90vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 8vh;
+  position: relative;
+}
+.project-container h3 {
+  color: #fefcfb;
+  font-size: 5rem;
+  margin: 0;
+  position: absolute;
+  padding: 4rem;
+  bottom: 5%;
+}
+
+img {
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #f07c42;
+  font-size: 3rem;
+}
+
+.project-wrapper {
+  margin: auto;
+}
+
+.description-container {
+  display: flex;
+}
+
+.project-img-header-container {
+  position: relative;
+}/*# sourceMappingURL=ProjectComponent.css.map */
