@@ -10,7 +10,7 @@ nav {
   @include mobile-nav;
   height: 8vh;
   transition-timing-function: ease;
-  z-index: 1;
+  z-index: 100;
 }
 
 .navigation.show {

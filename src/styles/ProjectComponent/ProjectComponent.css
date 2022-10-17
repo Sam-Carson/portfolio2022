@@ -69,7 +69,7 @@ html {
   margin: 0;
   position: absolute;
   padding: 4rem;
-  bottom: 5%;
+  bottom: 1%;
 }
 
 img {
@@ -88,8 +88,15 @@ a {
 
 .description-container {
   display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .project-img-header-container {
   position: relative;
+}
+
+.project-stack-container {
+  text-align: center;
+  color: white;
 }/*# sourceMappingURL=ProjectComponent.css.map */

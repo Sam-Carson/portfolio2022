@@ -9,3 +9,4 @@ export { default as Introduction } from "./Introduction";
 export { default as Skills } from "./Skills";
 export { default as Box } from "./Box";
 export { default as ProjectComponent } from "./ProjectComponent";
+export { default as DescriptionContainer } from "./DescriptionContainer";

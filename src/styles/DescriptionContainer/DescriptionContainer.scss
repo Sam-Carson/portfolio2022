@@ -1,0 +1,11 @@
+@import "../../Variables/Variables.scss";
+
+.description-wrapper {
+  margin: 5rem 0 0 0;
+}
+
+.breakdown-headers,
+.breakdown-descriptions {
+  font-family: $homeFont;
+  margin: 1rem 3rem;
+}

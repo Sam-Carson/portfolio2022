@@ -4,6 +4,7 @@ import {
   PairProgrammingIllustration,
   SolutionMindsetIllustration,
 } from "../images";
+import { DescriptionContainer } from "./index";
 import "../styles/Box/Box.scss";
 export default function Box() {
   return (
@@ -24,14 +25,12 @@ export default function Box() {
           unchanged.
         </p>
         <div className="skills-breakdown-container">
-          <div className="skills-top">
-            <p className="breakdown-headers">Frameworks:</p>
-            <p className="breakdown-descriptions">React, .NET</p>
-          </div>
-          <div className="skills-bottom">
-            <p className="breakdown-headers">Libraries:</p>
-            <p className="breakdown-descriptions">MUI, Tailwind, Bootstrap</p>
-          </div>
+          <DescriptionContainer header="Frameworks:" content="React, .NET" />
+          <DescriptionContainer
+            header="Libraries:"
+            content="MUI, Tailwind, Bootstrap"
+            style="5rem"
+          />
         </div>
       </div>
       <div className="skills-box skill-2">
@@ -50,14 +49,15 @@ export default function Box() {
           unchanged.
         </p>
         <div className="skills-breakdown-container">
-          <div className="skills-top">
-            <p className="breakdown-headers">Runtime enviornments:</p>
-            <p className="breakdown-descriptions">Node.js</p>
-          </div>
-          <div className="skills-bottom">
-            <p className="breakdown-headers">Frameworks:</p>
-            <p className="breakdown-descriptions">Express, ASP.NET</p>
-          </div>
+          <DescriptionContainer
+            header="Runtime enviornments:"
+            content="Node.js"
+          />
+          <DescriptionContainer
+            header="Frameworks:"
+            content="Express, ASP.NET"
+            style="5rem"
+          />
         </div>
       </div>
       <div className="skills-box skill-2">
@@ -76,14 +76,15 @@ export default function Box() {
           unchanged.
         </p>
         <div className="skills-breakdown-container">
-          <div className="skills-top">
-            <p className="breakdown-headers">Runtime enviornments:</p>
-            <p className="breakdown-descriptions">Node.js</p>
-          </div>
-          <div className="skills-bottom">
-            <p className="breakdown-headers">Frameworks:</p>
-            <p className="breakdown-descriptions">Express, ASP.NET</p>
-          </div>
+          <DescriptionContainer
+            header="Runtime enviornments:"
+            content="Node.js"
+          />
+          <DescriptionContainer
+            header="Frameworks:"
+            content="Express, ASP.NET"
+            style="5rem"
+          />
         </div>
       </div>
     </div>
