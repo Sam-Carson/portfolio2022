@@ -35,3 +35,17 @@ p {
     position: relative;
   }
 }
+
+@include tablet {
+  .introduction-section {
+    height: 60vh;
+  }
+  .headers-container h3 {
+    font-size: 6rem;
+  }
+  .headers-container p {
+    font-size: 3rem;
+    width: 80%;
+    margin: auto;
+  }
+}

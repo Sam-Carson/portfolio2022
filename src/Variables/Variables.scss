@@ -16,24 +16,20 @@ $textFont: "Roboto", sans-serif;
 $headerFont: "Bai Jamjuree", sans-serif;
 
 html {
-  font-size: 16px;
+  font-size: 62.5%;
   font-family: $headerFont;
 }
 
 //@media breakpoint definitions
 $breakpoints: (
-  "phoneSmall": 360px,
   "phoneLarge": 425px,
   "tablet": 768px,
   "laptop": 1024px,
   "laptopLarge": 1440px,
-  "desktop": 2560px,
+  "desktop": 1920px,
 ) !default;
 
 @mixin responsive {
-  @include phoneSmall() {
-    @include mobile-flex;
-  }
   @include phoneLarge() {
   }
   @include tablet() {
@@ -44,12 +40,6 @@ $breakpoints: (
   @include laptopLarge() {
   }
   @include desktop() {
-  }
-}
-
-@mixin phoneSmall {
-  @media (min-width: map-get($breakpoints, "phoneSmall")) {
-    @content;
   }
 }
 
@@ -86,34 +76,18 @@ $breakpoints: (
 // sets all sections responsive for each <section/>
 @mixin section-responsive {
   @include responsive;
-  @include phoneSmall {
-    width: 100%;
-    height: fit-content;
-  }
+
   @include phoneLarge {
   }
   @include tablet {
   }
   @include tablet {
-    .container {
-      margin: auto;
-      width: 85vw;
-    }
   }
   @include laptop {
-    .container {
-      width: 80vw;
-    }
   }
   @include laptopLarge {
-    .container {
-      width: 75vw;
-    }
   }
   @include desktop {
-    .container {
-      width: 60vw;
-    }
   }
 }
 
@@ -128,29 +102,4 @@ $breakpoints: (
 
 section {
   @include section-responsive;
-}
-
-////////////////////
-///
-///
-@mixin mobile-nav {
-  width: 100%;
-  background-color: rgba($color: $background, $alpha: 0.9);
-  background-clip: padding-box;
-  position: fixed;
-  color: $orange;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  transition-timing-function: ease;
-  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-  }
-}
-
-@mixin mobile-nav-btn {
-  color: $black;
-  padding: 2.5rem 2.5rem 2rem 0;
 }

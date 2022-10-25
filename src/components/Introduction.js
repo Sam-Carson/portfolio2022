@@ -1,6 +1,4 @@
 import React from "react";
-import HeroIllustration from "../images/undraw_progressive_app_m-9-ms.svg";
-import Avatar from "../images/avatar_transparent.svg";
 import Headshot from "../images/pro_headshot_square.jpg";
 import "../styles/Introduction/Introduction.css";
 

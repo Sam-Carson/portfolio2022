@@ -13,8 +13,14 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
   position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.32),
+    rgba(245, 246, 252, 0.1)
+  );
+  border-radius: 25px;
   h3 {
     color: $white;
     font-size: 5rem;
@@ -27,9 +33,6 @@
 
 img {
   border-radius: 25px;
-  //   box-shadow: 11px 10px 30px 1px rgba(224, 224, 224, 0.46);
-  //   -webkit-box-shadow: 11px 10px 30px 1px rgba(224, 224, 224, 0.46);
-  //   -moz-box-shadow: 11px 10px 30px 1px rgba(224, 224, 224, 0.46);
 }
 
 a {
@@ -46,13 +49,29 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 3vh;
 }
 
 .project-img-header-container {
   position: relative;
+  border-radius: 25px 25px 0 0;
 }
 
 .project-stack-container {
   text-align: center;
   color: white;
+}
+
+.img-div-link {
+  cursor: pointer;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  a {
+    font-family: $headerFont;
+  }
 }

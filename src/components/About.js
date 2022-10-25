@@ -14,13 +14,11 @@ export default function About() {
           variety of languages, platforms, frameworks and libraries. I enjoy
           tinkering with new technologies to expand my toolbox and to create
           unique user experinces.
-          <p>
-            I graduated from Bellevue College with a Bachelors of Applied
-            Science - Information Systems and Technologies - Appliaction
-            Development
-          </p>
         </p>
-
+        <p>
+          I graduated from Bellevue College with a Bachelors of Applied Science
+          - Information Systems and Technologies - Appliaction Development
+        </p>
         <div className="diploma-link-container">
           <a href={Diploma} className="diploma-link">
             View Diploma

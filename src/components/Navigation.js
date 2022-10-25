@@ -36,18 +36,31 @@ export default function Navigation() {
         hideOnScroll ? "scrollHide" : "scrollShow"
       }`}
     >
-      <a href="/" className="mobile-resume-link">
-        <div className="mobile-resume-container">resume</div>
+      <a href="/" className="logo-nav">
+        SMDC
       </a>
       <IconContext.Provider
         value={{
           className: `nav-icon ${showMenu ? "active" : "inactive"}`,
-          size: "5rem",
         }}
       >
         <IoIosMenu onClick={() => setShowMenu(!showMenu)} />
       </IconContext.Provider>
-      {showMenu && <SlideOutNav {...showMenu} />}
+      {/* {showMenu && <SlideOutNav {...showMenu} />} */}
+      <ul className="full-screen-nav">
+        <li>Home</li>
+        <div className="nav-span"></div>
+        <li>About</li>
+        <div className="nav-span"></div>
+
+        <li>Skills</li>
+        <div className="nav-span"></div>
+
+        <li>Projects</li>
+      </ul>
+      <a href="/" className="resume-link">
+        Resume
+      </a>
     </nav>
   );
 }

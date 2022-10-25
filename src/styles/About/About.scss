@@ -24,6 +24,9 @@
     text-align: center;
     line-height: 6rem;
   }
+  @include phoneLarge {
+    padding-bottom: 12vh;
+  }
 }
 
 .diploma-link-container {
@@ -35,4 +38,10 @@
   text-decoration: none;
   list-style: none;
   font-size: 3rem;
+}
+
+@include tablet {
+  .about-section {
+    padding-top: 6vh;
+  }
 }

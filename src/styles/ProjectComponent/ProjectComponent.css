@@ -1,50 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600;700&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
 html {
-  font-size: 16px;
+  font-size: 62.5%;
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-@media (min-width: 360px) {
-  section {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media (min-width: 1024px) {
   section {
     flex-direction: row;
   }
 }
-@media (min-width: 360px) {
-  section {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-@media (min-width: 768px) {
-  section .container {
-    margin: auto;
-    width: 85vw;
-  }
-}
-@media (min-width: 1024px) {
-  section .container {
-    width: 80vw;
-  }
-}
-@media (min-width: 1440px) {
-  section .container {
-    width: 75vw;
-  }
-}
-@media (min-width: 2560px) {
-  section .container {
-    width: 60vw;
-  }
-}
-
 .projects-section {
   background-color: #08080c;
   padding-top: 8vh;
@@ -60,8 +24,10 @@ html {
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 8vh;
+  margin-bottom: 5vh;
   position: relative;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.32), rgba(245, 246, 252, 0.1));
+  border-radius: 25px;
 }
 .project-container h3 {
   color: #fefcfb;
@@ -90,13 +56,29 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding-bottom: 3vh;
 }
 
 .project-img-header-container {
   position: relative;
+  border-radius: 25px 25px 0 0;
 }
 
 .project-stack-container {
   text-align: center;
   color: white;
+}
+
+.img-div-link {
+  cursor: pointer;
+}
+
+.project-links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+.project-links-container a {
+  font-family: "Bai Jamjuree", sans-serif;
 }/*# sourceMappingURL=ProjectComponent.css.map */

@@ -1,50 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600;700&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
 html {
-  font-size: 16px;
+  font-size: 62.5%;
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-@media (min-width: 360px) {
-  section {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media (min-width: 1024px) {
   section {
     flex-direction: row;
   }
 }
-@media (min-width: 360px) {
-  section {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-@media (min-width: 768px) {
-  section .container {
-    margin: auto;
-    width: 85vw;
-  }
-}
-@media (min-width: 1024px) {
-  section .container {
-    width: 80vw;
-  }
-}
-@media (min-width: 1440px) {
-  section .container {
-    width: 75vw;
-  }
-}
-@media (min-width: 2560px) {
-  section .container {
-    width: 60vw;
-  }
-}
-
 .about-container {
   margin: auto;
   width: 90vw;
@@ -70,6 +34,11 @@ html {
   text-align: center;
   line-height: 6rem;
 }
+@media (min-width: 425px) {
+  .about-section {
+    padding-bottom: 12vh;
+  }
+}
 
 .diploma-link-container {
   margin-top: 5rem;
@@ -80,4 +49,10 @@ html {
   text-decoration: none;
   list-style: none;
   font-size: 3rem;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding-top: 6vh;
+  }
 }/*# sourceMappingURL=About.css.map */

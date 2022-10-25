@@ -1,6 +1,6 @@
 import React from "react";
 import { ProjectComponent } from "./index";
-import { Spotify } from "../images/index";
+import { Spotify, SpotifyPlayer } from "../images/index";
 
 import "../styles/Works/Works.scss";
 
@@ -14,9 +14,31 @@ export default function Projects() {
         <ProjectComponent
           title="SpotifyHub"
           image={Spotify}
-          alt="spotifyHub"
           link="https://spotifyhub.herokuapp.com/"
-          stack="React, SpotifyHub, Express"
+          gitHubLink="https://github.com/Sam-Carson/spotifyHub/tree/master"
+          descriptionHeader1="Built with:"
+          descriptionHeader2="Software fundamentals:"
+          descriptionContent1={["React", "Node.js", "Express", "Spotify API"]}
+          descriptionContent2={[
+            "OAuth",
+            "REST API",
+            "HTTP Requests",
+            "Auth tokens stored locally",
+          ]}
+        />
+        <ProjectComponent
+          title="SpotifyHub"
+          image={SpotifyPlayer}
+          link="https://spotifyhub.herokuapp.com/"
+          descriptionHeader1="Built with:"
+          descriptionHeader2="Software fundamentals:"
+          descriptionContent1={["React", "Node.js", "Express", "Spotify API"]}
+          descriptionContent2={[
+            "OAuth",
+            "REST API",
+            "HTTP Requests",
+            "Auth tokens stored locally",
+          ]}
         />
       </div>
     </section>

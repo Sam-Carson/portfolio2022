@@ -2,13 +2,16 @@
 
 .slide-out-nav-container {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
   text-align: center;
-  transition: 3s;
+  transition: 2000ms ease-in-out;
   position: absolute;
   z-index: 0;
   top: 50%;
   transform: translateY(-50%);
+  a {
+    color: $black;
+  }
 }
 
 @keyframes fadeIn {
@@ -32,12 +35,12 @@
 ul {
   padding: 0;
   justify-content: center;
-  animation: fadeIn 2s;
+  animation: fadeIn 3s;
 }
 
 li {
   color: $black;
-  font-size: 5rem;
+  font-size: 3rem;
   list-style: none;
   margin: 4rem 0 4rem 0;
 }

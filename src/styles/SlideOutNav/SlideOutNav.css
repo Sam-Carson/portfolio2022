@@ -1,61 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600;700&family=Montserrat:wght@300&family=Oxygen:wght@300;400&family=Roboto:wght@100;400&display=swap");
 html {
-  font-size: 16px;
+  font-size: 62.5%;
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-@media (min-width: 360px) {
-  section {
-    display: flex;
-    flex-direction: column;
-  }
-}
 @media (min-width: 1024px) {
   section {
     flex-direction: row;
   }
 }
-@media (min-width: 360px) {
-  section {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-}
-@media (min-width: 768px) {
-  section .container {
-    margin: auto;
-    width: 85vw;
-  }
-}
-@media (min-width: 1024px) {
-  section .container {
-    width: 80vw;
-  }
-}
-@media (min-width: 1440px) {
-  section .container {
-    width: 75vw;
-  }
-}
-@media (min-width: 2560px) {
-  section .container {
-    width: 60vw;
-  }
-}
-
 .slide-out-nav-container {
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
   text-align: center;
-  transition: 3s;
+  transition: 2000ms ease-in-out;
   position: absolute;
   z-index: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+.slide-out-nav-container a {
+  color: #08080c;
 }
 
 @-webkit-keyframes fadeIn {
@@ -94,13 +59,13 @@ html {
 ul {
   padding: 0;
   justify-content: center;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
+  -webkit-animation: fadeIn 3s;
+          animation: fadeIn 3s;
 }
 
 li {
   color: #08080c;
-  font-size: 5rem;
+  font-size: 3rem;
   list-style: none;
   margin: 4rem 0 4rem 0;
 }

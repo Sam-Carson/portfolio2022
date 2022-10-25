@@ -1,8 +1,18 @@
-import React from "react";
+import { React } from "react";
 
 import "../styles/DescriptionContainer/DescriptionContainer.scss";
 
 export default function DescriptionContainer(props) {
+  const content = Array.from(props.content);
+
+  function ListItem(props) {
+    return <li>{props.value}</li>;
+  }
+
+  const listItems = content.map((cont) => (
+    <ListItem key={cont.id} value={cont} />
+  ));
+
   return (
     <div
       className="description-wrapper"
@@ -11,12 +21,11 @@ export default function DescriptionContainer(props) {
       <p className="breakdown-headers" style={props.headerStyleColor}>
         {props.header}
       </p>
-      <p
-        className="breakdown-descriptions"
-        style={{ color: `${props.contentStyleColor}` }}
+      <ul
+        className={`project-fundamentals ${props.textSize} ${props.textColor}`}
       >
-        {props.content}
-      </p>
+        {listItems}
+      </ul>
     </div>
   );
 }

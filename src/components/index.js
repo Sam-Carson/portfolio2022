@@ -10,3 +10,5 @@ export { default as Skills } from "./Skills";
 export { default as Box } from "./Box";
 export { default as ProjectComponent } from "./ProjectComponent";
 export { default as DescriptionContainer } from "./DescriptionContainer";
+export { default as SkillsBox } from "./SkillsBox";
+export { default as Footer } from "./Footer";

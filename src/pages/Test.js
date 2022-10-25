@@ -1,12 +1,13 @@
 import React from "react";
-import { Navigation, Introduction, About, Skills } from "../components";
+import { Navigation, Introduction, About, Skills, Works } from "../components";
 export default function Test() {
   return (
-    <div>
+    <>
       <Navigation />
-      {/* <Introduction /> */}
-      <About />
-      {/* <Skills /> */}
-    </div>
+      <Introduction />
+      {/* <About /> */}
+      {/* <Skills />
+      <Works /> */}
+    </>
   );
 }

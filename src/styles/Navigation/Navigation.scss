@@ -1,60 +1,110 @@
 @import "../../Variables/Variables.scss";
 
 nav {
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0px 5px 20px $background-light;
+  z-index: 10;
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 }
-.navigation.hide {
-  @include mobile-nav;
-  height: 8vh;
-  transition-timing-function: ease;
-  z-index: 100;
-}
 
 .navigation.show {
-  @include mobile-nav;
   height: 100%;
-  transition-timing-function: ease;
-  z-index: 2;
+}
+
+.resume-link {
+  display: none;
+  text-decoration: none;
+  height: fit-content;
+  font-size: 1.5rem;
+  position: relative;
+  top: 25%;
+  right: 5%;
+  border: 1px solid $orange;
+  border-radius: 2px;
+  padding: 5px 10px;
+  transition: 250ms ease-in-out;
+  @include laptop {
+    display: block;
+  }
+}
+
+.resume-link:hover {
+  background-color: $orange;
+  color: $white;
+}
+
+.nav-icon {
+  position: sticky;
+  margin-top: 15px;
+  margin-right: 5%;
+  width: 3rem;
+  height: 3rem;
+  @include tablet {
+    display: none;
+  }
+}
+
+.full-screen-nav {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 25%;
+  @include tablet {
+    display: block;
+    animation: none;
+  }
+  @include laptop {
+    right: calc(50% - 166.5px);
+  }
+}
+
+.full-screen-nav li {
+  display: inline-block;
+  margin: 0 2rem;
+  font-size: 1.3rem;
+  @include laptop {
+    font-size: 1.5rem;
+  }
+}
+
+.nav-span {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: $orange;
+}
+
+.logo-nav {
+  height: fit-content;
+  width: fit-content;
+  font-size: 1.7rem;
+  position: sticky;
+  margin-top: 18px;
+  margin-left: 5%;
 }
 
 nav.scrollShow {
-  transition: ease-in 1000ms;
+  transition: ease-in 500ms;
 }
 nav.scrollHide {
-  transition: ease-out 1000ms;
+  transition: ease-out 500ms;
   transform: translateY(-8vh);
+  box-shadow: none;
 }
 
-.nav-icon.active {
-  @include mobile-nav-btn;
-  color: $black;
-  transition: 1s;
-  z-index: 3;
-}
-
-.nav-icon.inactive {
-  @include mobile-nav-btn;
-  transition: 1s;
-}
-
-.mobile-resume-container {
-  width: fit-content;
-  height: fit-content;
-  padding: 1rem;
-  padding-top: 0.8rem;
-  color: $orange;
-  font-size: 2.5rem;
-  border: 1px solid $orange;
-  border-radius: 10px;
-  margin: 1rem 0 1rem 3rem;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(30%);
-}
-
-.mobile-resume-link {
-  text-decoration: none;
-}
+// .navigation.hide {
+//   @include mobile-nav;
+//   height: fit-content;
+//   max-height: 200px;
+//   transition: all 1s;
+//   z-index: 100;
+// }

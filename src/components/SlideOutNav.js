@@ -11,7 +11,7 @@ export default function SlideOutNav() {
         </li>
         <div className="nav-divider"></div>
         <li>
-          <a href="/">Projects</a>
+          <a href="/">About</a>
         </li>
         <div className="nav-divider"></div>
 
@@ -21,7 +21,7 @@ export default function SlideOutNav() {
         <div className="nav-divider"></div>
 
         <li>
-          <a href="/">About</a>
+          <a href="/">Projects</a>
         </li>
       </ul>
     </div>
