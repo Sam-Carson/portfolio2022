@@ -1,0 +1,60 @@
+.terminal-container {
+  background-color: var(--secondary-color);
+  padding-left: 24px !important;
+  padding-bottom: 20px !important;
+  padding-right: 20px !important;
+  border-top: 1px solid var(--border-gray);
+}
+
+.list-margin-bottom {
+  margin-bottom: 16px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.term-selected {
+  color: var(--white);
+}
+
+.term-unselected {
+  color: var(--gray);
+}
+@media (max-wdith: 450px) {
+  .terminal-container ul li {
+    white-space: nowrap;
+  }
+}
+
+.terminal-tab {
+  padding-right: 16px !important;
+}
+
+.terminal-tabs-container {
+  justify-content: left;
+  margin-left: 0;
+}
+
+.color-subtle-gray {
+  color: var(--te-gray);
+}
+
+.color-highlight-blue {
+  color: var(--te-blue);
+}
+
+.terminal-font {
+  font-family: var(--text-editor);
+  font-size: 16px;
+}
+
+.task-padding,
+.time-padding {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.font-color-time {
+  color: var(--te-purple);
+}

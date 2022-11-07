@@ -1,0 +1,62 @@
+.hero-vert-line {
+  width: 8px;
+  height: 850px;
+  border-radius: 20px;
+  background: linear-gradient(
+    var(--secondary-color),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-coral-light)
+  );
+  margin-right: 48px !important;
+  margin-left: 24px !important;
+  margin-top: 150px !important;
+}
+
+.hero-vert-line-reverse {
+  height: 850px;
+  background: linear-gradient(
+    var(--te-coral-light),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-yellow)
+  );
+  transform: translateY(-145px) !important;
+}
+
+.hero-container {
+  flex-direction: row;
+  padding-top: 256px !important;
+  margin-top: 256px !important;
+}
+
+.hero-container h1 {
+  font-size: 11rem;
+  font-family: var(--alliance1Bold);
+  margin-bottom: 0;
+}
+
+.hero-container p {
+  font-size: 6rem;
+  color: var(--gray);
+  margin-top: 80px !important;
+}
+
+.vert-line-container {
+  flex-direction: column;
+  transform: translateY(-7vh);
+}
+
+.code-icon-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 45px !important;
+  margin-bottom: 45px !important;
+  background: none;
+  transform: translateX(-10px);
+}
+
+.hero-flex-right {
+  margin-left: 35px !important;
+  transform: translateY(-5vh);
+}

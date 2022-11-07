@@ -1,0 +1,71 @@
+@media (max-width: 450px) {
+  .devToolContainer {
+    margin: auto;
+    width: 400px !important;
+  }
+}
+
+.devToolContainer {
+  width: 95%;
+  max-width: 1300px;
+  height: fit-content;
+  border: 1px solid rgb(48, 54, 61);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 70px 65px rgba(0, 0, 0, 0.18),
+    0 30px 30px rgba(0, 0, 0, 0.14), 0 15px 15px rgba(0, 0, 0, 0.12),
+    0 10px 8px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.06) !important;
+  margin: auto;
+  border-radius: 6px;
+  border-bottom: 1px solid var(--border-gray);
+  background-color: var(--secondary-color);
+  font-size: 1.2rem !important;
+}
+
+.flex-container {
+  height: fit-content;
+  flex-wrap: wrap;
+}
+
+.flex-left {
+  flex: 50%;
+  overflow: scroll;
+}
+
+.flex-right {
+  flex: 50%;
+}
+
+.max-width-550 {
+  width: 100%;
+  max-width: 550px;
+}
+
+.max-width-750 {
+  width: 100%;
+  max-width: 750px;
+}
+
+@media (max-width: 950px) {
+  .flex-right {
+    visibility: hidden;
+    width: 0 !important;
+  }
+  .flex-left {
+    flex: 100% !important;
+    max-width: 925px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .live-browser-container,
+  .flex-right {
+    max-width: 450px !important;
+    height: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .devToolContainer {
+    width: 95vw !important;
+  }
+}

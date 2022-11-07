@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans&display=swap");
+@import url(./Fonts/alliance/stylesheet.css);
+
+:root {
+  /* body background color */
+  --primary-color: rgb(8, 18, 26);
+  /* component background color  */
+  --secondary-color: rgb(22, 27, 34);
+  /* Text editor background */
+  --background-black: rgb(13, 17, 23);
+  /* Font color */
+  --white: rgb(241, 241, 241);
+  --gray: rgb(110, 118, 129);
+  /* Border color */
+  --border-gray: rgb(48, 54, 61);
+  /* Icon color */
+  --icon-gray: rgb(131, 141, 149);
+
+  /* Text Editor Colors */
+  --te-blue: rgb(133, 190, 249);
+  --te-pink: rgb(238, 134, 228);
+  --te-gray: rgb(131, 141, 149);
+  --te-purple: rgb(178, 146, 248);
+  --te-pastel-teal: #b2fff4;
+  --te--pastel-yellow: #fff0bf;
+  --te-pastel-green: #eeffbf;
+  --te-lime-green: #bdff06;
+  --te-yellow: #ffc506;
+  --te-orange: #f39d0c;
+  --te-magenta: #f30c62;
+  --te-coral: #ec6547;
+  --te-coral-light: #ffd6cc;
+
+  /* Fonts */
+  --alliance1: "alliance_no.1light"; /* CUSTOM FONT FACE */
+  --alliance1Bold: "alliance_no.1light_Bold";
+  --text-editor: "DM Mono", monospace;
+  --url: "Open Sans", sans-serif;
+}
+
+* {
+  color: white;
+  font-size: 10px;
+  font-family: var(--alliance1);
+}
+
+html {
+  background-color: var(--primary-color);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+@media (max-width: 450px) {
+  body {
+    margin: 8px 0 0 0;
+  }
+}
+
+.marg-a {
+  margin: auto;
+}
+
+.c-flex {
+  display: flex !important;
+}
+
+.tab-x {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+.tab-y {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.user-select-none {
+  user-select: none !important;
+}
+
+.editor-background-black {
+  background-color: var(--text-editor) !important;
+}
+
+.f4 {
+  font-size: 16px !important;
+  padding-bottom: 4px !important;
+}
+
+.text-editor-line {
+  border-left: 2px solid var(--primary-color) !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.pl-kos {
+  color: var(--white) !important;
+}
+
+.pl-elmt {
+  color: var(--te-blue) !important;
+}
+
+.pl-c1 {
+  color: var(--te-pink) !important;
+}
+
+.pl-s {
+  color: var(--te-purple) !important;
+}
+
+.code-icon-wrapper-mc {
+  background-color: transparent;
+  border-radius: 100%;
+  padding: 16px !important;
+  box-shadow: inset 0 0 30px #fff, /* inner white */ inset 20px 0 50px #f0f,
+    /* inner left magenta short */ inset -20px 0 50px #0ff,
+    /* inner right cyan short */ inset 20px 0 100px #f0f,
+    /* inner left magenta broad */ inset -20px 0 100px #0ff,
+    /* inner right cyan broad */ 0 0 20px #fff,
+    /* outer white */ -10px 0 30px #f0f,
+    /* outer left magenta */ 10px 0 30px #0ff; /* outer right cyan */
+}
+
+.code-icon-wrapper-gy {
+  background-color: transparent;
+  border-radius: 100%;
+  padding: 16px !important;
+  box-shadow: inset 0 0 30px #fff,
+    /* inner white */ inset 20px 0 50px var(--te-lime-green),
+    /* inner left var(--te-lime-green) short */ inset -20px 0 50px var(--te-yellow),
+    /* inner right var(--te-yellow)  short */ inset 20px 0 100px
+      var(--te-lime-green),
+    /* inner left var(--te-lime-green) broad */ inset -20px 0 100px var(--te-yellow),
+    /* inner right  var(--te-yellow) broad */ 0 0 20px #fff,
+    /* outer white */ -10px 0 30px var(--te-lime-green),
+    /* outer left var(--te-lime-green) */ 10px 0 30px var(--te-yellow); /* outer right  var(--te-yellow) */
+}

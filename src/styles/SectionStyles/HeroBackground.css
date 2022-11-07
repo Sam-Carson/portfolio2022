@@ -1,0 +1,19 @@
+.hero-img {
+  max-width: calc(180vw + 300px) !important;
+  position: relative !important;
+  right: 400px !important;
+}
+
+.hero-bkgrnd {
+  position: absolute !important;
+  top: 0 !important;
+  z-index: -100 !important;
+  width: 100vw !important;
+  overflow: hidden !important;
+}
+
+.hero-bkgrnd-fade {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(var(--primary-color), black);
+}

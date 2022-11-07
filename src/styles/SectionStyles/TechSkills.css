@@ -1,0 +1,39 @@
+.ts-container {
+  flex-direction: column;
+  margin-top: 200px !important;
+}
+
+.ts-flex {
+  flex-direction: row;
+  margin-left: 20px !important;
+}
+
+.ts-wrapper {
+  margin-top: 50px !important;
+}
+
+.ts-flex-right,
+.ts-flex-middle,
+.ts-flex-left {
+  height: fit-content;
+  flex: 50% 1;
+}
+
+.ts-icon {
+  margin-left: 50px !important;
+  margin-right: 50px !important;
+  margin-bottom: 25px !important;
+  padding-bottom: 24px !important;
+}
+
+.text-fill-gradient {
+  font-size: 4rem !important;
+  color: transparent !important;
+  background: linear-gradient(
+      71.18deg,
+      var(--te-blue) 7.32%,
+      var(--te-pastel-green) 30.59%,
+      var(--te-pink) 55.82%
+    )
+    text !important;
+}

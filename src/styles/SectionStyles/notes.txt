@@ -1,0 +1,1 @@
+assign css classes for specific screen widths and the image resolution for the backgorund.

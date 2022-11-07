@@ -1,0 +1,28 @@
+.devToolBrowserHeader-container {
+  justify-content: space-between;
+  padding: 16px !important;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+@media (max-width: 700px) {
+  .devToolBrowserHeader-container {
+    padding: 8px !important;
+  }
+}
+
+.arrow-icon-container {
+  height: fit-content;
+  transform: translateY(5px);
+  width: fit-content;
+}
+@media (max-width: 700px) {
+  .arrow-icon-container,
+  .plus-icon-container {
+    visibility: hidden;
+    width: 0 !important;
+  }
+}
+
+.plus-icon-container {
+  height: fit-content;
+}
