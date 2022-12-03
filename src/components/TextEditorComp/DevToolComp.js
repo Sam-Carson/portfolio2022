@@ -13,7 +13,7 @@ export default function DevToolComp() {
     <div className="devToolContainer">
       <DevToolBrowserHeader />
       <div className="flex-container c-flex">
-        <div className="flex-left max-width-750">
+        <div className="flex-left">
           <div className="text-editor-container">
             <TextEditorTabs />
             <TextEditor />
@@ -22,7 +22,7 @@ export default function DevToolComp() {
             <Terminal />
           </div>
         </div>
-        <div className="flex-right max-width-550">
+        <div className="te-flex-right max-width-550 hidden">
           <div className="live-browser-container">
             <LivePreview />
           </div>

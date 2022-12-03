@@ -1,14 +1,14 @@
-.about-container {
+.project-container {
   flex-direction: row;
 }
 
-.as-vl {
-  height: 1500px;
+.ps-vl {
+  height: 2000px;
   background: linear-gradient(
-    var(--te-yellow),
-    var(--te-yellow),
     var(--te-lime-green),
     var(--te-lime-green),
-    var(--te-lime-green)
+    var(--te-pink),
+    var(--te-magenta),
+    var(--te-magenta)
   );
 }

@@ -21,9 +21,12 @@ header {
   right: 0;
   margin-top: 25px;
   margin-right: 25px;
+  border: none;
+  z-index: 10;
 }
 
 .hamburger-icon {
   margin: auto;
   top: 50%;
+  z-index: 10;
 }

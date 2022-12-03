@@ -1,6 +1,8 @@
 .ts-container {
   flex-direction: column;
-  margin-top: 200px !important;
+  margin-top: 350px !important;
+  transition: 300ms;
+  overflow: hidden;
 }
 
 .ts-flex {

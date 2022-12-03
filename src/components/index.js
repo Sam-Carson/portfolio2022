@@ -4,3 +4,8 @@ export { default as Hero } from "./Hero";
 export { default as Header } from "./Header";
 export { default as TechSkills } from "./TechSkills";
 export { default as About } from "./About";
+export { default as FloatingButton } from "./FloatingButton";
+export { default as HeaderMenu } from "./HeaderMenu";
+export { default as Projects } from "./Projects";
+export { default as Credentials } from "./Credentials";
+export { default as Footer } from "./Footer";

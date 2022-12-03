@@ -7,6 +7,7 @@
 
 .devToolContainer {
   width: 95%;
+  width: 875px;
   max-width: 1300px;
   height: fit-content;
   border: 1px solid rgb(48, 54, 61);
@@ -31,7 +32,7 @@
   overflow: scroll;
 }
 
-.flex-right {
+.te-flex-right {
   flex: 50%;
 }
 
@@ -45,8 +46,14 @@
   max-width: 750px;
 }
 
+@media (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+}
+
 @media (max-width: 950px) {
-  .flex-right {
+  .te-flex-right {
     visibility: hidden;
     width: 0 !important;
   }
@@ -58,7 +65,7 @@
 
 @media (max-width: 1160px) {
   .live-browser-container,
-  .flex-right {
+  .te-flex-right {
     max-width: 450px !important;
     height: 0;
   }

@@ -1,10 +1,14 @@
 import React from "react";
+
 import {
   DevToolComp,
   HeroBackground,
   Hero,
   Header,
   About,
+  Projects,
+  Credentials,
+  Footer,
 } from "../components";
 
 export default function Home() {
@@ -14,7 +18,9 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <DevToolComp />
+      <Projects />
+      <Credentials />
+      <Footer />
     </>
   );
 }

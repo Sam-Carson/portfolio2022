@@ -1,0 +1,9 @@
+.f-vl {
+  height: 900px;
+  background: linear-gradient(
+    var(--te-pastel-teal),
+    var(--te-pastel-teal),
+    var(--secondary-color),
+    var(--primary-color)
+  );
+}
