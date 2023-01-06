@@ -11,7 +11,7 @@ export default function Header() {
     <header>
       <div className="header-wrap c-flex">
         <button className="hamburger-cont">
-          <IconContext.Provider value={{ size: "50px" }}>
+          <IconContext.Provider value={{ size: "35px" }}>
             <BsMenuDown className="hamburger-icon" />
           </IconContext.Provider>
         </button>

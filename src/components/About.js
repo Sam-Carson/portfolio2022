@@ -1,7 +1,9 @@
 import React from "react";
 import { DiReact } from "react-icons/di";
 import { IconContext } from "react-icons";
-
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
+import { IDCard } from "./index";
 import "../styles/SectionStyles/About.css";
 
 export default function About() {
@@ -12,22 +14,23 @@ export default function About() {
           <div className="as-vl column-line c-flex" />
           <div className="icon-align-container">
             <div className="code-icon-container c-flex icon-btn-container">
-              <div className="code-icon-wrapper-mp orb ">
-                <IconContext.Provider value={{ size: "50px" }}>
-                  <DiReact />
-                </IconContext.Provider>
-              </div>
+              <Zoom>
+                <div className="code-icon-wrapper-mp orb ">
+                  <IconContext.Provider value={{ size: "50px" }}>
+                    <DiReact />
+                  </IconContext.Provider>
+                </div>
+              </Zoom>
             </div>
             <div className="float-btn-container">
-              <h3 className="section-title-header">Projects</h3>
+              <Fade>
+                <h3 className="section-title-header">Projects</h3>
+              </Fade>
             </div>
           </div>
         </div>
 
-        <div className="flex-right">
-          <h1>Hey, I'm Sam</h1>
-          <p>I've been programming for 4+ years </p>
-        </div>
+        <IDCard />
       </div>
     </section>
   );

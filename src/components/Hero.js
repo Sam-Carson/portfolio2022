@@ -3,6 +3,8 @@ import { RiCodeFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
 import { TechSkills, FloatingButton } from "./index";
 import { FaRegUser } from "react-icons/fa";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 import "../styles/SectionStyles/Hero.css";
 
@@ -16,7 +18,7 @@ export default function Hero() {
           <div className="icon-align-container">
             <div className="code-icon-container c-flex ">
               <div className="code-icon-wrapper-mc orb">
-                <IconContext.Provider value={{ size: "50px" }}>
+                <IconContext.Provider value={{ className: "orb-icon" }}>
                   <RiCodeFill />
                 </IconContext.Provider>
               </div>
@@ -34,11 +36,13 @@ export default function Hero() {
 
           <div className="icon-align-container">
             <div className="code-icon-container c-flex icon-btn-container">
-              <div className="code-icon-wrapper-gy orb ">
-                <IconContext.Provider value={{ size: "50px" }}>
-                  <FaRegUser />
-                </IconContext.Provider>
-              </div>
+              <Zoom>
+                <div className="code-icon-wrapper-gy orb ">
+                  <IconContext.Provider value={{ className: "orb-icon" }}>
+                    <FaRegUser />
+                  </IconContext.Provider>
+                </div>
+              </Zoom>
             </div>
             <div className="float-btn-container">
               <h3 className="section-title-header">Introduction</h3>
@@ -47,11 +51,15 @@ export default function Hero() {
         </div>
 
         <div className="flex-right">
-          <h1>Developing applications for the future</h1>
+          <h1>
+            Developing applications <br className="hh-br" />
+            for the future
+          </h1>
           <p>
             Beautiful designs.
             <br /> Maximum performance. <br />
-            Clean and well documented code. Let's reach new heights together.
+            Clean and well documented code. <br />
+            Let's reach new heights together.
           </p>
           <TechSkills />
         </div>

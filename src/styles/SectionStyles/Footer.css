@@ -1,4 +1,20 @@
-.f-vl {
+.footer-container {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--secondary-color);
+}
+
+.footer-content {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.footer-content a,
+.footer-content p {
+  font-size: 2.5rem;
+}
+
+/* .f-vl {
   height: 900px;
   background: linear-gradient(
     var(--te-pastel-teal),
@@ -6,4 +22,4 @@
     var(--secondary-color),
     var(--primary-color)
   );
-}
+} */

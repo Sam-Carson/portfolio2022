@@ -9,3 +9,5 @@ export { default as HeaderMenu } from "./HeaderMenu";
 export { default as Projects } from "./Projects";
 export { default as Credentials } from "./Credentials";
 export { default as Footer } from "./Footer";
+export { default as IDCard } from "./IDCard";
+export { default as ProjectCard } from "./ProjectCard";

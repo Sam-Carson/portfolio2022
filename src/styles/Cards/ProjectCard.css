@@ -1,0 +1,46 @@
+.projectcard {
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto 70px auto;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-gray);
+  border-radius: 50px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 70px 65px rgba(0, 0, 0, 0.18),
+    0 30px 30px rgba(0, 0, 0, 0.14), 0 15px 15px rgba(0, 0, 0, 0.12),
+    0 10px 8px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.06) !important;
+  overflow: hidden;
+}
+
+.pc-img {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+}
+
+.pc-header {
+  padding: 40px !important;
+  text-align: left;
+  margin: auto;
+}
+
+.pc-title {
+  font-size: 4rem !important;
+  color: var(--white);
+}
+
+.pc-header p {
+  margin-bottom: 50px !important;
+  font-size: 4rem !important;
+  color: var(--gray);
+}
+
+.pc-link {
+  font-size: 3rem !important;
+  transition: 1000ms;
+  margin-bottom: 30px !important;
+}
+
+.pc-link:hover {
+  text-decoration: underline !important;
+}

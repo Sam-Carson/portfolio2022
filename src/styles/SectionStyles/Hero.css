@@ -1,22 +1,29 @@
 .hero-vert-line {
-  height: 840px;
+  height: 970px;
   background: linear-gradient(
-    var(--secondary-color),
+    var(--te-transparent),
+    var(--te-transparent),
     var(--te-blue),
     var(--te-blue),
-    var(--te-coral-light)
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-transparent)
   );
-  margin-top: 150px !important;
 }
 
 .hs-vl2 {
-  height: 1000px;
+  height: 850px;
   background: linear-gradient(
-    var(--te-coral-light),
-    var(--te-coral-light),
-    var(--te-coral-light),
-    var(--te-yellow),
-    var(--te-yellow)
+    var(--te-transparent),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-blue),
+    var(--te-transparent)
   );
 }
 
@@ -34,12 +41,11 @@
 
 .hero-container {
   flex-direction: row;
-  padding-top: 256px !important;
-  margin-top: 246px !important;
+  margin-top: 360px !important;
 }
 
 .hero-container h1 {
-  font-size: 11rem;
+  font-size: 10rem;
   font-family: var(--alliance1Bold);
   margin-bottom: 0;
 }
@@ -53,4 +59,42 @@
 
 .vert-line-container {
   flex-direction: column;
+}
+
+.hero-section {
+  background-image: none !important;
+}
+/*************************************/
+/*************************************/
+/*************************************/
+/*Media Queries*/
+
+/* Small Mobile Devices */
+@media screen and (min-width: 600px) {
+  .hero-container {
+    margin-top: 200px !important;
+  }
+  .hero-container h1 {
+    font-size: 8.5rem !important;
+  }
+  .hero-container p {
+    font-size: 4rem;
+    margin-top: 60px !important;
+  }
+  .hero-vert-line {
+    height: 720px;
+  }
+  .hs-vl2 {
+    height: 650px !important;
+  }
+  .icon-align-container {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+  .float-btn-container {
+    margin-left: 10% !important;
+  }
+  .orb-icon {
+    font-size: 3rem !important;
+  }
 }

@@ -31,6 +31,7 @@
   --te-coral: #ec6547;
   --te-coral-light: #f6a38e;
   --te-neon-green: rgb(126, 231, 135);
+  --te-transparent: rgba(255, 255, 255, 0);
 
   /* Fonts */
   --alliance1: "alliance_no.1light"; /* CUSTOM FONT FACE */
@@ -64,15 +65,28 @@ section {
   padding-right: 30px !important;
 }
 
-footer {
-  padding-left: 35px !important;
-  padding-right: 35px !important;
+@media screen and (min-width: 725px) {
+  section {
+    margin-left: 20px !important;
+    margin-right: 50px !important;
+  }
 }
 
 @media (max-width: 450px) {
   body {
     margin: 8px 0 0 0;
   }
+}
+
+.box-shadow {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5), 0 70px 65px rgba(0, 0, 0, 0.18),
+    0 30px 30px rgba(0, 0, 0, 0.14), 0 15px 15px rgba(0, 0, 0, 0.12),
+    0 10px 8px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.06) !important;
+}
+
+.hidden {
+  display: none;
 }
 
 .marg-a {
@@ -141,6 +155,17 @@ footer {
   padding: 16px !important;
 }
 
+/* .orb-icon {
+  width: 50px !important;
+  height: 50px !important;
+} */
+
+@media screen and (min-width: 600px) {
+  .orb {
+    padding: 10px !important;
+  }
+}
+
 .code-icon-wrapper-mc {
   box-shadow: inset 0 0 30px #fff, /* inner white */ inset 20px 0 50px #f0f,
     /* inner left magenta short */ inset -20px 0 50px #0ff,
@@ -153,14 +178,14 @@ footer {
 
 .code-icon-wrapper-gy {
   box-shadow: inset 0 0 30px #fff,
-    /* inner white */ inset 20px 0 50px var(--te-yellow),
-    /* inner left var(--te-lime-green) short */ inset -20px 0 50px var(--te-lime-green),
+    /* inner white */ inset 20px 0 50px var(--te-magenta),
+    /* inner left var(--te-lime-green) short */ inset -20px 0 50px var(--te-coral),
     /* inner right var(--te-yellow)  short */ inset 20px 0 100px
-      var(--te-yellow),
-    /* inner left var(--te-lime-green) broad */ inset -20px 0 100px var(--te-lime-green),
+      var(--te-magenta),
+    /* inner left var(--te-lime-green) broad */ inset -20px 0 100px var(--te-coral),
     /* inner right  var(--te-yellow) broad */ 0 0 20px #fff,
-    /* outer white */ -10px 0 30px var(--te-yellow),
-    /* outer left var(--te-lime-green) */ 10px 0 30px var(--te-lime-green); /* outer right  var(--te-yellow) */
+    /* outer white */ -10px 0 30px var(--te-magenta),
+    /* outer left var(--te-lime-green) */ 10px 0 30px var(--te-coral); /* outer right  var(--te-yellow) */
 }
 
 .code-icon-wrapper-mp {
@@ -212,7 +237,7 @@ footer {
 }
 
 .column-line {
-  width: 8px;
+  width: 2px;
   border-radius: 20px;
   margin: auto;
 }

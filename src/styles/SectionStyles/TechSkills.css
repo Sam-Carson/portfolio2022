@@ -26,6 +26,7 @@
   margin-right: 50px !important;
   margin-bottom: 25px !important;
   padding-bottom: 24px !important;
+  font-size: 6.5rem !important;
 }
 
 .text-fill-gradient {
@@ -38,4 +39,16 @@
       var(--te-pink) 55.82%
     )
     text !important;
+}
+
+@media screen and (min-width: 600px) {
+  .ts-container {
+    margin-top: 200px !important;
+  }
+  .text-fill-gradient {
+    font-size: 2.5rem !important;
+  }
+  .ts-icon {
+    font-size: 6.5rem !important;
+  }
 }

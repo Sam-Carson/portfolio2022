@@ -30,33 +30,27 @@ export default function TechSkills() {
       <Fade right>
         <div className="ts-wrapper">
           <div className="ts-flex ts-flex-left flex-left c-flex marg-a">
-            <IconContext.Provider
-              value={{ size: "80px", color: "var(--gray)" }}
-            >
-              <DiHtml5 className="ts-icon" />
-              <DiReact className="ts-icon" />
-              <DiVisualstudio className="ts-icon" />
-              <DiTerminal className="ts-icon" />
+            <IconContext.Provider value={{ className: "ts-icon" }}>
+              <DiHtml5 />
+              <DiReact />
+              <DiVisualstudio />
+              <DiTerminal />
             </IconContext.Provider>
           </div>
           <div className="ts-flex ts-flex-middle marg-a c-flex">
-            <IconContext.Provider
-              value={{ size: "80px", color: "var(--gray)" }}
-            >
-              <DiCss3 className="ts-icon" />
-              <DiBootstrap className="ts-icon" />
-              <DiGitBranch className="ts-icon" />
-              <DiStackoverflow className="ts-icon" />
+            <IconContext.Provider value={{ className: "ts-icon" }}>
+              <DiCss3 />
+              <DiBootstrap />
+              <DiGitBranch />
+              <DiStackoverflow />
             </IconContext.Provider>
           </div>
           <div className="ts-flex flex-right marg-a c-flex">
-            <IconContext.Provider
-              value={{ size: "80px", color: "var(--gray)" }}
-            >
-              <DiJsBadge className="ts-icon" />
-              <DiSass className="ts-icon" />
-              <DiGithubBadge className="ts-icon" />
-              <SiCsharp className="ts-icon" />
+            <IconContext.Provider value={{ className: "ts-icon" }}>
+              <DiJsBadge />
+              <DiSass />
+              <DiGithubBadge />
+              <SiCsharp />
             </IconContext.Provider>
           </div>
         </div>

@@ -15,12 +15,12 @@
 }
 
 .fb-container p {
-  font-size: 5.5rem;
   margin-top: 5px !important;
   margin-bottom: 5px !important;
 }
 
 .fb-title {
+  font-size: 5.5rem;
   color: var(--white) !important;
   margin-left: 25px !important;
 }
@@ -29,4 +29,22 @@
   font-size: 3.5rem !important;
   margin-left: 25px !important;
   color: var(--gray);
+}
+
+@media screen and (min-width: 600px) {
+  .fb-container {
+    min-width: 340px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 25px !important;
+    transform: translateY(-25px);
+  }
+  .fb-title {
+    font-size: 3.2rem !important;
+  }
+  .fb-cont {
+    font-size: 2.1rem !important;
+  }
 }
