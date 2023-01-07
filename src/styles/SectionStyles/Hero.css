@@ -1,5 +1,5 @@
 .hero-vert-line {
-  height: 970px;
+  height: calc(100% + 100px) !important;
   background: linear-gradient(
     var(--te-transparent),
     var(--te-transparent),
@@ -17,7 +17,7 @@
 }
 
 .hs-vl2 {
-  height: 850px;
+  height: 100% !important;
   background: linear-gradient(
     var(--te-transparent),
     var(--te-blue),
@@ -64,6 +64,7 @@
 .hero-section {
   background-image: none !important;
 }
+
 /*************************************/
 /*************************************/
 /*************************************/
@@ -79,14 +80,10 @@
   }
   .hero-container p {
     font-size: 4rem;
-    margin-top: 60px !important;
+    margin-top: 30px !important;
+    margin-bottom: 60px !important;
   }
-  .hero-vert-line {
-    height: 720px;
-  }
-  .hs-vl2 {
-    height: 650px !important;
-  }
+
   .icon-align-container {
     margin-top: 15px !important;
     margin-bottom: 15px !important;

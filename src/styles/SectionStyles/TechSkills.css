@@ -1,6 +1,7 @@
 .ts-container {
   flex-direction: column;
-  margin-top: 350px !important;
+  margin-top: 200px !important;
+  margin-bottom: 150px !important;
   transition: 300ms;
   overflow: hidden;
 }
@@ -10,9 +11,9 @@
   margin-left: 20px !important;
 }
 
-.ts-wrapper {
+/* .ts-wrapper {
   margin-top: 50px !important;
-}
+} */
 
 .ts-flex-right,
 .ts-flex-middle,
@@ -43,7 +44,6 @@
 
 @media screen and (min-width: 600px) {
   .ts-container {
-    margin-top: 200px !important;
   }
   .text-fill-gradient {
     font-size: 2.5rem !important;

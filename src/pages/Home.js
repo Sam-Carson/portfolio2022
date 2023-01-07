@@ -18,9 +18,8 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      {/* <Projects />
-      <Credentials />
-      <Footer /> */}
+      <Projects />
+      <Footer />
     </>
   );
 }

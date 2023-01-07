@@ -13,6 +13,20 @@ export default function IDCard() {
           longer! I have hands on experince building projects for a consumer.
         </p>
       </div>
+      <div className="credits-row c-flex">
+        <div className="credit" id="left-credit">
+          <p>Resume</p>
+        </div>
+        <div className="credit">
+          <p>Github</p>
+        </div>
+        <div className="credit">
+          <p>StackOverflow</p>
+        </div>
+        <div className="credit" id="right-credit">
+          <p>Diploma</p>
+        </div>
+      </div>
     </div>
   );
 }

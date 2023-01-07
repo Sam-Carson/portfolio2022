@@ -55,7 +55,7 @@ export default function Hero() {
             Developing applications <br className="hh-br" />
             for the future
           </h1>
-          <p>
+          <p id="hero-description">
             Beautiful designs.
             <br /> Maximum performance. <br />
             Clean and well documented code. <br />

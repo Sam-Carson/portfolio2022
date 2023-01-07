@@ -1,13 +1,13 @@
 import React from "react";
 import { IconContext } from "react-icons";
-import { BsNewspaper } from "react-icons/bs";
+import { FaChevronUp } from "react-icons/fa";
 import { DevToolComp, ProjectCard } from "./index";
 import { Spotify } from "../images/index";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 
 import "../styles/SectionStyles/Projects.css";
-import { SiP5Dotjs } from "react-icons/si";
+import FloatingButton from "./FloatingButton";
 
 export default function Projects() {
   return (
@@ -18,16 +18,20 @@ export default function Projects() {
           <div className="icon-align-container">
             <div className="code-icon-container c-flex icon-btn-container">
               <Zoom>
-                <div className="code-icon-wrapper-mm orb ">
+                <div className="code-icon-wrapper-mt orb ">
                   <IconContext.Provider value={{ size: "50px" }}>
-                    <BsNewspaper />
+                    <FaChevronUp />
                   </IconContext.Provider>
                 </div>
               </Zoom>
+            </div>
+            <div className="float-btn-container">
               <Fade>
-                <div className="float-btn-container">
-                  <h3 className="section-title-header">Credentials</h3>
-                </div>
+                <FloatingButton
+                  header="Scroll to the top"
+                  detail="I look forward to hearing from you"
+                  link="#hero"
+                />
               </Fade>
             </div>
           </div>
