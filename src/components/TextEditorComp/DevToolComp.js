@@ -6,6 +6,7 @@ import {
   Terminal,
   LivePreview,
 } from "./index";
+import { Spotify } from "../../images/index";
 import "../../styles/DevToolComp/DevToolComp.css";
 
 export default function DevToolComp() {
@@ -22,10 +23,8 @@ export default function DevToolComp() {
             <Terminal />
           </div>
         </div>
-        <div className="te-flex-right max-width-550 hidden">
-          <div className="live-browser-container">
-            <LivePreview />
-          </div>
+        <div className="te-flex-right max-width-550">
+          <div className="live-browser-container"></div>
         </div>
       </div>
     </div>

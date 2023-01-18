@@ -1,13 +1,13 @@
 import React from "react";
 
 import {
-  DevToolComp,
+  // DevToolComp,
   HeroBackground,
   Hero,
-  Header,
+  // Header,
   About,
   Projects,
-  Credentials,
+  // Credentials,
   Footer,
 } from "../components";
 
@@ -15,7 +15,6 @@ export default function Home() {
   return (
     <>
       <HeroBackground />
-      <Header />
       <Hero />
       <About />
       <Projects />

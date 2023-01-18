@@ -1,0 +1,104 @@
+.projectcard {
+  height: fit-content;
+  margin: 0 auto 70px auto;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-gray);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.pc-img {
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  filter: grayscale(10%);
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: radial-gradient(black 50%, transparent 100%);
+}
+
+.pc-header {
+  padding: 40px !important;
+  text-align: left;
+  margin: auto;
+}
+
+.pc-title {
+  font-size: 4rem !important;
+  color: var(--white);
+}
+
+.pc-header p {
+  margin-bottom: 50px !important;
+  font-size: 4rem !important;
+  color: var(--gray);
+}
+
+.pc-link {
+  font-size: 3rem !important;
+  margin-bottom: 30px !important;
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  position: relative;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.pc-link::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1px;
+  position: relative;
+  bottom: 0.37rem;
+  background-color: var(--white);
+  opacity: 0.5;
+  transition: var(--transition);
+}
+
+.pc-link:hover {
+  text-decoration: underline !important;
+}
+
+.pc-chevron {
+  height: 30px !important;
+  width: 30px !important;
+  transform: translateY(5px) !important;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tech-ul {
+  justify-content: end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem !important;
+  margin-bottom: 5rem !important;
+  padding: 0 !important;
+  background: var(--theme-gradient-still);
+  /* background-size: 400%; */
+  /* animation: gradient 5s ease infinite; */
+  background-clip: text;
+}
+
+.tech-list-li {
+  font-family: var(--url);
+  font-size: 3rem !important;
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding: 0 !important;
+  width: fit-content !important;
+  -webkit-text-fill-color: var(--te-transparent);
+}

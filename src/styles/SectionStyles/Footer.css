@@ -1,5 +1,9 @@
+footer {
+  position: relative;
+  bottom: 0 !important;
+  width: 100% !important;
+}
 .footer-container {
-  width: 100%;
   height: fit-content;
   background-color: var(--secondary-color);
 }

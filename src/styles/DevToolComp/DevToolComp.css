@@ -75,3 +75,9 @@
     width: 95vw !important;
   }
 }
+
+.live-browser-container {
+  background-color: var(--primary-color);
+  height: 100%;
+  border-left: 1px solid var(--border-gray);
+}
