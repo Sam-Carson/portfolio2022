@@ -1,6 +1,6 @@
 import React from "react";
-import { DevToolComp } from "./../components/index";
+import { Nova } from "./../components/index";
 
 export default function Test() {
-  return <DevToolComp />;
+  return <Nova />;
 }

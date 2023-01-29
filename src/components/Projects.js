@@ -1,4 +1,6 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
 import { IconContext } from "react-icons";
 import { RiCodeFill } from "react-icons/ri";
 import { SpotifyHubCard } from "./index";
@@ -24,8 +26,17 @@ export default function Projects() {
             </div>
           </div>
         </div>
-        <div className="flex-right">
-          <SpotifyHubCard />
+        <div className="flex-right c-flex project-div">
+          <div id="project-card-left">
+            <Fade right>
+              <SpotifyHubCard />
+            </Fade>
+          </div>
+          <div id="project-card-right">
+            <Fade right>
+              <SpotifyHubCard />
+            </Fade>
+          </div>
         </div>
       </div>
     </section>

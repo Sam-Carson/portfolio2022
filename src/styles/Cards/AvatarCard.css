@@ -47,13 +47,6 @@
   color: var(--te-purple);
 }
 
-@media screen and (min-width: 700px) {
-  .description-p,
-  .dp-highlight {
-    font-size: 3.2rem;
-  }
-}
-
 .column-container {
   flex-direction: column;
 }
@@ -97,8 +90,8 @@
   padding-bottom: 20px !important;
   width: 40px !important;
   height: 40px !important;
-  background: var(--theme-gradient-horizontal);
-  color: transparent !important;
+  /* background: var(--theme-gradient-horizontal); */
+  color: var(--white);
   clip-path: url(#mask);
 }
 
@@ -137,4 +130,39 @@
   color: var(--te-pink);
   transform: translateY(7px) !important;
   margin-right: 15px !important;
+}
+
+@media screen and (min-width: 700px) {
+  .description-p,
+  .dp-highlight {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card {
+    width: 60%;
+    margin-left: 70px !important;
+  }
+  #avatar-img {
+    width: 20% !important;
+  }
+  #header-p {
+    font-size: 4rem !important;
+  }
+  .skills-list-header {
+    font-size: 2rem !important;
+  }
+  .skills-list li {
+    font-size: 2rem !important;
+  }
+  .checks {
+    width: 20px !important;
+    height: 20px !important;
+    color: var(--te-pink);
+  }
+  .dp-highlight,
+  .description-p {
+    font-size: 2.2rem !important;
+  }
 }

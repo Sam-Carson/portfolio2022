@@ -14,11 +14,11 @@ export default function SpotifyHubCard() {
           top tracks, artists, and playlists.
         </p>
         <ul className="tech-ul c-flex">
-          <li className="tech-list-li">React</li>
-          <li className="tech-list-li">Styled Componenet</li>
-          <li className="tech-list-li">Spotify API</li>
-          <li className="tech-list-li">Express</li>
-          <li className="tech-list-li">Heroku</li>
+          <li className="tech-list-li">#React</li>
+          <li className="tech-list-li">#Styled Componenet</li>
+          <li className="tech-list-li">#Spotify API</li>
+          <li className="tech-list-li">#Express</li>
+          <li className="tech-list-li">#Heroku</li>
         </ul>
         <a
           href="https://spotifyhub.herokuapp.com/"
@@ -26,7 +26,7 @@ export default function SpotifyHubCard() {
           rel="noreferrer"
           className="pc-link"
         >
-          Login into SpotifyHub
+          Login to SpotifyHub
           <IconContext.Provider value={{ className: "pc-chevron" }}>
             <GoChevronRight />
           </IconContext.Provider>

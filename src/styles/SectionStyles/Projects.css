@@ -1,3 +1,25 @@
 .project-container {
   margin-right: 25px !important;
 }
+
+.project-div {
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .project-container {
+    margin: auto !important;
+  }
+  .project-div {
+    flex-direction: row;
+    overflow: visible;
+    width: 70vw !important;
+  }
+  #project-card-left {
+    margin-right: 3rem !important;
+  }
+
+  #project-card-right {
+    margin-left: 3rem !important;
+  }
+}

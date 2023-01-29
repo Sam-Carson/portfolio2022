@@ -11,8 +11,6 @@
     var(--te-purple),
     var(--te-transparent)
   );
-
-  /* transform: translateY(-35px) !important; */
 }
 
 .about-container {
@@ -48,6 +46,7 @@
   margin-left: auto;
   background-color: var(--secondary-color);
   border-radius: 30px 30px 7px 30px !important;
+  width: fit-content;
 }
 
 .chat-end {
@@ -62,4 +61,31 @@
 .my-text {
   background: var(--theme-gradient-vertical);
   background-attachment: fixed;
+}
+
+@media screen and (min-width: 1200px) {
+  .about-container {
+    margin: auto !important;
+  }
+  .chat-bubble {
+    width: 40% !important;
+    font-size: 2rem !important;
+    margin-bottom: 2rem !important;
+    margin-top: 0 !important;
+  }
+  #about-flex-right {
+    width: 90% !important;
+    margin-left: 100px !important;
+    margin-top: 200px !important;
+  }
+  #chat-final,
+  .chat-end {
+    width: fit-content !important;
+  }
+  .chat-left {
+    margin-left: 70px !important;
+  }
+  .chat-right {
+    margin-right: 70px !important;
+  }
 }

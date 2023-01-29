@@ -1,21 +1,13 @@
 .hero-img {
-  max-width: calc(130vw + 300px);
+  max-width: calc(100vw) !important;
   position: relative !important;
-  right: 400px !important;
-}
-
-@media screen and (min-width: 600px) {
-  .hero-img {
-    max-width: calc(100vw) !important;
-    right: 0px !important;
-  }
 }
 
 .hero-bkgrnd {
   position: absolute !important;
   top: 0 !important;
   z-index: -100 !important;
-  width: 100vw !important;
+  width: 100% !important;
   overflow: hidden !important;
 }
 
