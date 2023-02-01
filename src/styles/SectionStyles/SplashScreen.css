@@ -1,0 +1,12 @@
+.splashscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+.loader-container {
+  position: fixed;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

@@ -13,8 +13,9 @@ export default function Hero() {
     <section className="hero-section" id="hero">
       <div className="hero-container c-flex width-70">
         <div className="c-flex vert-line-container">
-          <div className="as-vl column-line c-flex" />
-
+          <Fade bottom>
+            <div className="as-vl column-line c-flex" />
+          </Fade>
           <div className="icon-align-container">
             <div className="code-icon-container c-flex ">
               <Zoom delay={1000} duration={1500}>
@@ -30,7 +31,6 @@ export default function Hero() {
                 <FloatingButton
                   header="Skip to the projects"
                   detail="The proof is in the pudding."
-                  link="#projects"
                 />
               </Fade>
             </div>
@@ -39,7 +39,7 @@ export default function Hero() {
 
         <div className="flex-right" id="hero-flex-right">
           <Fade up delay={500} duration={500}>
-            <h1>
+            <h1 id="hero-header">
               Developing applications <br className="hh-br" />
               for the future
             </h1>

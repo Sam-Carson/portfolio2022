@@ -81,14 +81,7 @@ export default function IDCard() {
           I've worked an array of different positions in different industries
           accumulating a repuitire of valuable skills. From road construction to
           sales, fast forward to today and you'll find me managing the craft
-          cocktail bar at
-          <a
-            href="https://www.storiacucina.com/"
-            className="description-p dp-highlight2"
-          >
-            Storia Cucina
-          </a>
-          .
+          cocktail bar at Storia Cucina.
         </p>
       </div>
       <div className="credits-row c-flex">

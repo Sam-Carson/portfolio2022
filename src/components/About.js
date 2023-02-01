@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-
+import Zoom from "react-reveal/Zoom";
 import { RiCodeFill } from "react-icons/ri";
 import { IDCard } from "./index";
 import { IconContext } from "react-icons";
@@ -11,19 +11,30 @@ export default function About() {
     <section className="about-section">
       <div className="about-container c-flex">
         <div className="c-flex vert-line-container">
-          <div className="as-vl column-line c-flex" />
+          <div className="as-vl2 column-line c-flex" />
           <div className="icon-align-container">
             <div className="code-icon-container c-flex ">
-              <div className="code-icon-wrapper-mc orb">
-                <IconContext.Provider value={{ className: "orb-icon" }}>
-                  <RiCodeFill />
-                </IconContext.Provider>
-              </div>
+              <Zoom duration={1500}>
+                <div className="code-icon-wrapper-mc orb">
+                  <IconContext.Provider value={{ className: "orb-icon" }}>
+                    <RiCodeFill />
+                  </IconContext.Provider>
+                </div>
+              </Zoom>
+            </div>
+            <div className="fade-container">
+              <Fade right delay={500}>
+                <div className="header-align">
+                  <p className="projects-header" id="float-btn-destination">
+                    Projects
+                  </p>
+                </div>
+              </Fade>
             </div>
           </div>
         </div>
         <div className="flex-right" id="about-flex-right">
-          <Fade bottom delay={1000} fraction={1}>
+          <Fade bottom delay={500} fraction={1}>
             <p className="chat-bubble chat-left chat-top my-text box-shadow">
               Hey, I'm Sam! <br />
               <br />

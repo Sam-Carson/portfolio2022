@@ -1,51 +1,26 @@
-.as-vl {
-  height: 100%;
-  background: linear-gradient(
-    var(--te-transparent),
-    var(--te-purple),
-    var(--te-purple),
-    var(--te-purple),
-    var(--te-purple),
-    var(--te-purple),
-    var(--te-purple),
-    var(--te-purple),
-    var(--te-transparent)
-  );
-}
-
-.about-container {
-  margin-right: 25px !important;
-}
-
 .chat-bubble {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
+  padding-top: 0.8em !important;
+  padding-bottom: 0.8em !important;
+  padding-left: 1.3em !important;
+  padding-right: 1em !important;
   background-color: var(--secondary-color);
   border: 1px solid var(--border-gray);
-  border-radius: 20px !important;
-  width: 70vw !important;
+  width: 27rem !important;
   position: relative;
-  margin-top: 45px !important;
-  margin-bottom: 45px !important;
-  font-size: 3.7rem;
-}
-
-.chat-top {
-  margin-top: 200px !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  font-size: 1.5rem;
 }
 
 .chat-left {
   margin-right: auto;
-  /* background-color: var(--te-dark-purple); */
-  border-radius: 30px 30px 30px 7px !important;
+  border-radius: 1.8rem 1.8rem 1.8rem 0.4rem !important;
 }
 
 .chat-right {
   margin-left: auto;
   background-color: var(--secondary-color);
-  border-radius: 30px 30px 7px 30px !important;
+  border-radius: 1.8rem 1.8rem 0.4rem 1.8rem !important;
   width: fit-content;
 }
 
@@ -54,7 +29,7 @@
 }
 
 #chat-final {
-  margin-bottom: 15px !important;
+  margin-bottom: 1.5rem !important;
   box-shadow: none !important;
 }
 
@@ -63,29 +38,25 @@
   background-attachment: fixed;
 }
 
-@media screen and (min-width: 1200px) {
-  .about-container {
-    margin: auto !important;
-  }
-  .chat-bubble {
-    width: 40% !important;
-    font-size: 2rem !important;
-    margin-bottom: 2rem !important;
-    margin-top: 0 !important;
-  }
-  #about-flex-right {
-    width: 90% !important;
-    margin-left: 100px !important;
-    margin-top: 200px !important;
-  }
-  #chat-final,
-  .chat-end {
-    width: fit-content !important;
-  }
-  .chat-left {
-    margin-left: 70px !important;
-  }
-  .chat-right {
-    margin-right: 70px !important;
-  }
+.header-align {
+  position: absolute !important;
+  margin-left: 1.2rem !important;
+  overflow: visible;
+}
+.fade-container {
+  transform: translateY(-1.8rem) !important;
+  overflow: visible;
+}
+
+.projects-header {
+  font-family: var(--alliance1);
+  font-size: 3.8rem;
+  margin: 0 !important;
+  overflow: visible;
+  transform: translateY(1.2rem);
+}
+
+#about-flex-right {
+  margin-left: 2.5rem !important;
+  margin-top: 5rem !important;
 }

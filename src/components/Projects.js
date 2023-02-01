@@ -1,6 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
-
+import { FloatingButton } from "./index";
 import { IconContext } from "react-icons";
 import { RiCodeFill } from "react-icons/ri";
 import { SpotifyHubCard } from "./index";
@@ -13,7 +13,7 @@ export default function Projects() {
       <div className="project-container c-flex">
         <div className="c-flex vert-line-container">
           <div
-            className="as-vl column-line c-flex line-height"
+            className="as-vl3 column-line c-flex line-height"
             id="final-line"
           />
           <div className="icon-align-container">

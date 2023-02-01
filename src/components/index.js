@@ -9,3 +9,4 @@ export { default as Footer } from "./Footer";
 export { default as IDCard } from "./IDCard";
 export { default as SpotifyHubCard } from "./SpotifyHubCard";
 export { default as Nova } from "./Nova";
+export { default as SplashScreen } from "./SplashScreen";
