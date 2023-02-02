@@ -28,6 +28,7 @@ footer {
 .footer-icon-container {
   justify-content: space-between;
   width: 50vw;
+  max-width: 30rem;
   margin: auto;
   margin-top: 1.5rem !important;
 }
@@ -45,12 +46,12 @@ footer {
 
 .footer-details {
   flex-direction: column;
-  margin-top: 1rem !important;
+  margin-top: 1rem;
   justify-content: space-evenly;
 }
 
 .footer-source-code-link {
-  color: var(--te-dark-purple) !important;
+  color: var(--te-dark-purple);
   margin-left: 0.4rem !important;
   text-decoration: none;
   transition-duration: 300ms;
@@ -59,5 +60,18 @@ footer {
 
 .footer-source-code-link:hover,
 .footer-source-code-link:active {
-  color: var(--white) !important;
+  color: var(--white);
+}
+
+@media screen and (min-width: 1400px) {
+  .footer-content a,
+  .footer-content p {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem !important;
+  }
+  .footer-details {
+    margin-bottom: 1rem !important;
+    margin-top: 2rem !important;
+  }
 }

@@ -18,11 +18,11 @@ export default function Projects() {
           />
           <div className="icon-align-container">
             <div className="code-icon-container c-flex ">
-              <div className="code-icon-wrapper-mc orb">
+              {/* <div className="code-icon-wrapper-mc orb">
                 <IconContext.Provider value={{ className: "orb-icon" }}>
                   <RiCodeFill />
                 </IconContext.Provider>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

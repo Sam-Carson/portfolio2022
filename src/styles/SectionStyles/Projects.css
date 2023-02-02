@@ -2,6 +2,11 @@
   flex-direction: column;
 }
 
-#project-card-right {
-  margin-bottom: 8rem;
+@media screen and (min-width: 800px) {
+  .project-div {
+    flex-direction: row;
+  }
+  #project-card-right {
+    margin-bottom: 3rem;
+  }
 }

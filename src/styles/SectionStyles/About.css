@@ -5,7 +5,7 @@
   padding-right: 1em !important;
   background-color: var(--secondary-color);
   border: 1px solid var(--border-gray);
-  width: 27rem !important;
+  width: 27rem;
   position: relative;
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
@@ -40,11 +40,11 @@
 
 .header-align {
   position: absolute !important;
-  margin-left: 1.2rem !important;
+  margin-left: 1.2rem;
   overflow: visible;
 }
 .fade-container {
-  transform: translateY(-1.8rem) !important;
+  transform: translateY(-1.8rem);
   overflow: visible;
 }
 
@@ -57,6 +57,39 @@
 }
 
 #about-flex-right {
-  margin-left: 2.5rem !important;
-  margin-top: 5rem !important;
+  margin-left: 2.5rem;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 400px) {
+  .chat-right {
+    width: 27rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  #about-flex-right {
+    margin-top: 15rem;
+  }
+  .chat-right,
+  .chat-left {
+    width: 35rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .chat-bubble {
+    width: 40rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .chat-bubble {
+    width: 50rem;
+    font-size: 2rem;
+  }
+  .projects-header {
+    font-size: 5rem;
+    transform: translateY(0.7rem);
+  }
 }

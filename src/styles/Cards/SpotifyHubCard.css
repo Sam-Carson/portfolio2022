@@ -6,6 +6,7 @@
   border-radius: 2.5rem;
   overflow: hidden;
   transition: 500ms ease;
+  max-width: 65rem;
 }
 
 .pc-img {
@@ -18,24 +19,24 @@
 }
 
 .pc-header {
-  padding: 2em !important;
+  padding: 2em;
   text-align: left;
   margin: auto;
 }
 
 .pc-title {
-  font-size: 1.5rem !important;
+  font-size: 1.5rem;
   color: var(--white);
 }
 
 .pc-header p {
-  margin-bottom: 2rem !important;
-  font-size: 1.5rem !important;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
   color: var(--gray);
 }
 
 .pc-link {
-  font-size: 1.3rem !important;
+  font-size: 1.3rem;
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
@@ -57,13 +58,13 @@
 }
 
 .pc-link:hover {
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .pc-chevron {
-  height: 1.5rem !important;
-  width: 1.5rem !important;
-  transform: translateY(0.3rem) !important;
+  height: 1.5rem;
+  width: 1.5rem;
+  transform: translateY(0.3rem);
 }
 
 @keyframes gradient {
@@ -82,18 +83,32 @@
   justify-content: flex-start;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 1rem !important;
-  margin-bottom: 2rem !important;
-  padding: 0 !important;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0;
   background: var(--theme-gradient-still);
   background-clip: text;
 }
 
 .tech-list-li {
   font-family: var(--url);
-  font-size: 1.3rem !important;
-  margin-right: 2rem !important;
-  padding: 0 !important;
-  width: fit-content !important;
+  font-size: 1.3rem;
+  margin-right: 2rem;
+  padding: 0;
+  width: fit-content;
   -webkit-text-fill-color: var(--white);
+}
+
+@media screen and (min-width: 800px) {
+  .projectcard {
+    margin: 0 1rem;
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .projectcard {
+    margin: 0 2rem;
+    margin-top: 5rem;
+  }
 }

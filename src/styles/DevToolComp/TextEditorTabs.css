@@ -5,10 +5,10 @@ ul {
 li {
   list-style: none;
   font-family: var(--url);
-  margin: 0 !important;
-  line-height: 27px !important;
-  white-space: nowrap !important;
-  font-size: 1rem !important;
+  margin: 0;
+  line-height: 27px;
+  white-space: nowrap;
+  font-size: 1rem;
 }
 
 .tab-selected {
