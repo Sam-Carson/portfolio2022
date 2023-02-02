@@ -34,8 +34,8 @@ export default function About() {
           </div>
         </div>
         <div className="flex-right" id="about-flex-right">
-          <Fade bottom delay={500} fraction={1}>
-            <p className="chat-bubble chat-left chat-top my-text box-shadow">
+          <Fade bottom delay={500} fraction={0.1}>
+            <p className="chat-bubble chat-left chat-top my-text box-shadow my-chat-1">
               Hey, I'm Sam! <br />
               <br />
               I've been tinkering around with web technologies for over 5+ years
@@ -44,13 +44,14 @@ export default function About() {
               joy and potential of creating things for the web!
             </p>
           </Fade>
+
           <Fade bottom delay={500}>
-            <p className="chat-bubble chat-right box-shadow">
+            <p className="chat-bubble chat-right box-shadow ">
               That's awesome Sam! What technologies do you have experince with?
             </p>
           </Fade>
           <Fade bottom delay={500}>
-            <p className="chat-bubble chat-left my-text box-shadow">
+            <p className="chat-bubble chat-left my-text box-shadow my-chat-2">
               I started off learning the basics: HTML, CSS, and JavaScript. Fast
               forward to today and I've created full stack appliactions with
               React, Node.js, C# and the .NET ecosystem.
@@ -63,7 +64,7 @@ export default function About() {
             </p>
           </Fade>
           <Fade bottom delay={500} fraction={0.5}>
-            <p className="chat-bubble chat-left my-text box-shadow">
+            <p className="chat-bubble chat-left my-text box-shadow my-chat-3">
               I've worked with SQL and Firebase for databases but have also
               touched based on MongoDB as well.
             </p>
@@ -75,7 +76,7 @@ export default function About() {
             </p>
           </Fade>
           <Fade bottom delay={500} fraction={0.5}>
-            <p className="chat-bubble chat-left my-text box-shadow">
+            <p className="chat-bubble chat-left my-text box-shadow my-chat-4">
               I would say problem solving, but it isn't easy to narrow it down
               to one. You must have the technical skills and basic understanding
               of the web to fully implement the opperations you are trying to
@@ -89,7 +90,7 @@ export default function About() {
           </Fade>
           <Fade bottom delay={500}>
             <p
-              className="chat-bubble chat-left box-shadow my-text chat-end"
+              className="chat-bubble chat-left box-shadow my-text chat-end my-chat-5"
               id="chat-final"
             >
               Great, here is my card!

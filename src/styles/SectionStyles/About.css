@@ -33,9 +33,25 @@
   box-shadow: none !important;
 }
 
-.my-text {
-  background: var(--theme-gradient-vertical);
-  background-attachment: fixed;
+/* .my-text {
+  background: var(--theme-gradient-vertical) !important;
+  background-attachment: fixed !important;
+} */
+
+.my-chat-1 {
+  background-color: rgb(127, 59, 178);
+}
+.my-chat-2 {
+  background-color: rgb(120, 67, 183);
+}
+.my-chat-3 {
+  background-color: rgb(113, 75, 188);
+}
+.my-chat-4 {
+  background-color: rgb(107, 83, 193);
+}
+.my-chat-5 {
+  background-color: rgb(100, 91, 198);
 }
 
 .header-align {
