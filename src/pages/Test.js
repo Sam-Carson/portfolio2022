@@ -1,6 +1,5 @@
 import React from "react";
-import { SplashScreen } from "./../components/index";
-
+import { Animation } from "../components";
 export default function Test() {
-  return <SplashScreen />;
+  return <Animation />;
 }

@@ -108,4 +108,10 @@
     font-size: 5rem;
     transform: translateY(0.7rem);
   }
+
+  #about-flex-right {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 450px;
+  }
 }

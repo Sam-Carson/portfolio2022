@@ -27,6 +27,18 @@
   --te-flat-blue: rgba(89, 116, 219, 1);
   --te-transparent: rgba(255, 255, 255, 0);
 
+  /* Vec3 Colors */
+  --violet-v3: vec3(0.541, 0.184, 0.722);
+  --pink-v3: vec3(0.933, 0.525, 0.894);
+  --bluev3: vec3(0.522, 0.741, 0.976);
+
+  /* Vec4 Colors */
+  --pink: vec4(0.93, 0.53, 0.89, 1);
+  --violet: vec4(0.55, 0.18, 0.72, 1);
+  --blue: vec4(0.52, 0.75, 0.98, 1);
+  --yellow: vec4(0.94, 0.76, 0.13, 1);
+  --orange: vec4(0.94, 0.48, 0.15, 1);
+
   /* Gradients */
   --theme-gradient-still: linear-gradient(
     270deg,

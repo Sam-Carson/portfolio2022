@@ -1,11 +1,19 @@
 import React from "react";
 
-import { HeroBackground, Hero, About, Projects, Footer } from "../components";
+import {
+  HeroBackground,
+  Hero,
+  About,
+  Projects,
+  Footer,
+  Animation,
+} from "../components";
 
 export default function Home() {
   return (
     <>
-      <HeroBackground />
+      {/* <HeroBackground /> */}
+      <Animation />
       <Hero />
       <About />
       <Projects />
