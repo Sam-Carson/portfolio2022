@@ -39,9 +39,12 @@ export default function Hero() {
 
         <div className="flex-right" id="hero-flex-right">
           <Fade up delay={500} duration={500}>
-            <h1 id="hero-header">
+            <h1 className="hero-header">
               Developing applications <br className="hh-br" />
-              for the future
+              for the
+              <span className="hero-header" id="future">
+                FUTURE
+              </span>
             </h1>
           </Fade>
           <Fade up delay={700} duration={500}>

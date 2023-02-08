@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "../styles/SectionStyles/FloatingButton.css";
 
 export default function FloatingButton(props) {
@@ -18,6 +10,7 @@ export default function FloatingButton(props) {
       smooth={true}
       duration={500}
       to="float-btn-destination"
+      offset={-50}
     >
       <div className="fb-container c-flex box-shadow">
         <p className="c-flex fb-title">{props.header}</p>

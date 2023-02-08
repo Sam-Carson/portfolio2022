@@ -17,13 +17,7 @@ export default function Projects() {
             id="final-line"
           />
           <div className="icon-align-container">
-            <div className="code-icon-container c-flex ">
-              {/* <div className="code-icon-wrapper-mc orb">
-                <IconContext.Provider value={{ className: "orb-icon" }}>
-                  <RiCodeFill />
-                </IconContext.Provider>
-              </div> */}
-            </div>
+            <div className="code-icon-container c-flex " />
           </div>
         </div>
         <div className="flex-right c-flex project-div">

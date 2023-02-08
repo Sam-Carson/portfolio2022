@@ -1,8 +1,9 @@
 import React from "react";
-
+import styled from "styled-components";
+import config from "react-reveal/globals";
 import {
-  HeroBackground,
   Hero,
+  Header,
   About,
   Projects,
   Footer,
@@ -10,10 +11,14 @@ import {
 } from "../components";
 
 export default function Home() {
+  //Prevents flickering for react-reveal components
+  config({ ssrFadeout: true });
   return (
     <>
-      {/* <HeroBackground /> */}
-      <Animation />
+      <AnimationContainer>
+        <Animation />
+      </AnimationContainer>
+      <Header />
       <Hero />
       <About />
       <Projects />
@@ -21,3 +26,10 @@ export default function Home() {
     </>
   );
 }
+
+const AnimationContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+`;

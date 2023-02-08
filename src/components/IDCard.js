@@ -5,17 +5,42 @@ import { IconContext } from "react-icons";
 import { GiDiploma } from "react-icons/gi";
 import { VscGithubInverted } from "react-icons/vsc";
 import { SiLinkedin } from "react-icons/si";
-import "../styles/Cards/AvatarCard.css";
+import "../styles/Cards/IDCard.css";
 
 export default function IDCard() {
+  function Techs(props) {
+    return (
+      <li>
+        <BsCheck />
+        {props.stack}
+      </li>
+    );
+  }
+
+  function TechList() {
+    const techStack = [
+      "React",
+      "Node.js",
+      "JavaScript (ES6+)",
+      "SASS",
+      "C# (.NET ecosystem)",
+      "SQL",
+      "Express",
+      "API",
+    ];
+    return (
+      <ul className="skills-list">
+        <IconContext.Provider value={{ className: "checks" }}>
+          {techStack.map((tech) => (
+            <Techs stack={tech} />
+          ))}
+        </IconContext.Provider>
+      </ul>
+    );
+  }
+
   return (
     <div className="card c-flex box-shadow">
-      <svg width="0" height="0">
-        <linearGradient id="blue-gradient" x1="100%" y1="0%" x2="0%" y2="0%">
-          <stop stopColor="#7a6ded" offset="0%" />
-          <stop stopColor="#591885" offset="100%" />
-        </linearGradient>
-      </svg>
       <div className="column-container">
         <img
           id="avatar-img"
@@ -34,46 +59,8 @@ export default function IDCard() {
           <p className="skills-list-header">
             Technologies I've been working with recently:
           </p>
-          <ul className="skills-list">
-            <IconContext.Provider value={{ className: "checks" }}>
-              <li>
-                <BsCheck />
-                JavaScript (ES6+)
-              </li>
-              <li>
-                <BsCheck />
-                Node.js
-              </li>
-
-              <li>
-                <BsCheck />
-                C# (.NET ecosystem)
-              </li>
-              <li>
-                <BsCheck />
-                SASS
-              </li>
-              <li>
-                <BsCheck />
-                React
-              </li>
-
-              <li>
-                <BsCheck />
-                Express
-              </li>
-              <li>
-                <BsCheck />
-                SQL
-              </li>
-              <li>
-                <BsCheck />
-                API
-              </li>
-            </IconContext.Provider>
-          </ul>
+          <TechList />
         </div>
-
         <p className="description-p">
           <span className="dp-highlight">
             I aim to be an asset at my position and those around me.
@@ -85,39 +72,34 @@ export default function IDCard() {
         </p>
       </div>
       <div className="credits-row c-flex">
-        <a
-          href="https://www.linkedin.com/in/sam-carson-33152416a/"
-          target="_blank"
-          rel="noreferrer"
-          className="credit"
-          id="left-credit"
-        >
-          <IconContext.Provider value={{ className: "credit-icon" }}>
+        <IconContext.Provider value={{ className: "credit-icon" }}>
+          <a
+            href="https://www.linkedin.com/in/sam-carson-33152416a/"
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            id="left-credit"
+          >
             <SiLinkedin />
-          </IconContext.Provider>
-        </a>
-
-        <a
-          href="https://github.com/Sam-Carson"
-          target="_blank"
-          className="credit"
-          rel="noreferrer"
-        >
-          <IconContext.Provider value={{ className: "credit-icon" }}>
+          </a>
+          <a
+            href="https://github.com/Sam-Carson"
+            target="_blank"
+            className="credit"
+            rel="noreferrer"
+          >
             <VscGithubInverted />
-          </IconContext.Provider>
-        </a>
-        <a
-          href="../documents/file.pdf"
-          target="_blank"
-          rel="noreferrer"
-          className="credit"
-          id="right-credit"
-        >
-          <IconContext.Provider value={{ className: "credit-icon" }}>
+          </a>
+          <a
+            href="../documents/file.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="credit"
+            id="right-credit"
+          >
             <GiDiploma />
-          </IconContext.Provider>
-        </a>
+          </a>
+        </IconContext.Provider>
       </div>
     </div>
   );
